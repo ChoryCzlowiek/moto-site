@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/moto-site/static/js/main.7e9fb877.chunk.js",
-    "main.js.map": "/moto-site/static/js/main.7e9fb877.chunk.js.map",
+    "main.js": "/moto-site/static/js/main.c2849f7a.chunk.js",
+    "main.js.map": "/moto-site/static/js/main.c2849f7a.chunk.js.map",
     "runtime-main.js": "/moto-site/static/js/runtime-main.d7b20187.js",
     "runtime-main.js.map": "/moto-site/static/js/runtime-main.d7b20187.js.map",
-    "static/js/2.53ff4fb4.chunk.js": "/moto-site/static/js/2.53ff4fb4.chunk.js",
-    "static/js/2.53ff4fb4.chunk.js.map": "/moto-site/static/js/2.53ff4fb4.chunk.js.map",
+    "static/js/2.19436f7d.chunk.js": "/moto-site/static/js/2.19436f7d.chunk.js",
+    "static/js/2.19436f7d.chunk.js.map": "/moto-site/static/js/2.19436f7d.chunk.js.map",
     "index.html": "/moto-site/index.html",
-    "static/js/2.53ff4fb4.chunk.js.LICENSE.txt": "/moto-site/static/js/2.53ff4fb4.chunk.js.LICENSE.txt",
+    "static/js/2.19436f7d.chunk.js.LICENSE.txt": "/moto-site/static/js/2.19436f7d.chunk.js.LICENSE.txt",
     "static/media/FjallaOne-Regular.c674a102.ttf": "/moto-site/static/media/FjallaOne-Regular.c674a102.ttf",
     "static/media/FrankRuhlLibre-Bold.45f0e946.ttf": "/moto-site/static/media/FrankRuhlLibre-Bold.45f0e946.ttf",
     "static/media/FrankRuhlLibre-Regular.43412bd4.ttf": "/moto-site/static/media/FrankRuhlLibre-Regular.43412bd4.ttf",
@@ -15,7 +15,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.d7b20187.js",
-    "static/js/2.53ff4fb4.chunk.js",
-    "static/js/main.7e9fb877.chunk.js"
+    "static/js/2.19436f7d.chunk.js",
+    "static/js/main.c2849f7a.chunk.js"
   ]
 }
