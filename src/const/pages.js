@@ -2,8 +2,8 @@ export const pages = {
   home: {
     location: "home",
     path: "/",
-    headerTitle: "Strona Główna",
-    headerSubtitle: "Witamy na naszej stronie!",
+    headerTitle: "Witamy w naszym zakładzie",
+    headerSubtitle: "Dbamy o kazdy szczegol!",
   },
   aboutUs: {
     location: "aboutUs",
@@ -15,13 +15,13 @@ export const pages = {
     location: "benefits",
     path: "/zalety",
     headerTitle: "Zalety",
-    headerSubtitle: "Sprawdź czym się wyrożniamy!",
+    headerSubtitle: "Sprawdz czym sie wyrozniamy!",
   },
   priceList: {
     location: "priceList",
     path: "/cennik",
     headerTitle: "Cennik",
-    headerSubtitle: "Sprawdź nasze usługi!",
+    headerSubtitle: "Sprawdz nasze uslugi!",
   },
   contact: {
     location: "contact",

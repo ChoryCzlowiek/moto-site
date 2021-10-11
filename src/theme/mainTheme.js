@@ -4,6 +4,6 @@ export const theme = {
   black: "rgb(19,24,44)",
   blackOpc: "rgba(19,24,44,0.4)",
   white: "rgb(207,207,207)",
-  textBoldFont: "FrankRuhBold",
-  titleFont: "Fjalla",
+  textBoldFont: "RobotoBold",
+  titleFont: "Tangerine",
 };

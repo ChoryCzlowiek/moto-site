@@ -1,9 +1,11 @@
 import React from "react";
 import { pages } from "../const/pages";
-import PageTemplate from "./PageTemplate";
+import Slider from "../components/organisms/Slider";
 
 const HomeTemplate = () => (
-  <PageTemplate location={pages.home.location}></PageTemplate>
+  <>
+    <Slider location={pages.home.location} />
+  </>
 );
 
 export default HomeTemplate;

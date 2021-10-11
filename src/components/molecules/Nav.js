@@ -8,19 +8,28 @@ const StyledUlWrapper = styled.ul`
   list-style: none;
   display: flex;
   justify-content: space-between;
+  padding: ${({ home }) => (home ? "0 15%" : "0")};
+  transform: translateY(${({ home }) => (home ? "-50%" : 0)});
 `;
 
-const Nav = () => (
-  <StyledUlWrapper>
-    <NavItem as={NavLink} to={pages.home.path}>
-      Strona Główna
-    </NavItem>
+const Nav = ({ home }) => (
+  <StyledUlWrapper home>
+    {!home && (
+      <NavItem as={NavLink} to={pages.home.path}>
+        Strona Główna
+      </NavItem>
+    )}
     <NavItem as={NavLink} to={pages.aboutUs.path}>
       O Nas
     </NavItem>
     <NavItem as={NavLink} to={pages.benefits.path}>
       Zalety
     </NavItem>
+    {home && (
+      <NavItem title as={NavLink} to={pages.home.path}>
+        NAZWA
+      </NavItem>
+    )}
     <NavItem as={NavLink} to={pages.priceList.path}>
       Cennik
     </NavItem>
