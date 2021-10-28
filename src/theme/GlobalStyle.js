@@ -29,6 +29,7 @@ const GlobalStyle = createGlobalStyle`
 body{
     font-family: 'Roboto';
     color: rgb(19,24,44);
+    background-color: rgb(19,24,44);
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
