@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/moto-site/static/js/main.e2a304c9.chunk.js",
-    "main.js.map": "/moto-site/static/js/main.e2a304c9.chunk.js.map",
+    "main.js": "/moto-site/static/js/main.f0370e2a.chunk.js",
+    "main.js.map": "/moto-site/static/js/main.f0370e2a.chunk.js.map",
     "runtime-main.js": "/moto-site/static/js/runtime-main.d7b20187.js",
     "runtime-main.js.map": "/moto-site/static/js/runtime-main.d7b20187.js.map",
-    "static/js/2.36e761d3.chunk.js": "/moto-site/static/js/2.36e761d3.chunk.js",
-    "static/js/2.36e761d3.chunk.js.map": "/moto-site/static/js/2.36e761d3.chunk.js.map",
+    "static/js/2.3971384c.chunk.js": "/moto-site/static/js/2.3971384c.chunk.js",
+    "static/js/2.3971384c.chunk.js.map": "/moto-site/static/js/2.3971384c.chunk.js.map",
     "index.html": "/moto-site/index.html",
-    "static/js/2.36e761d3.chunk.js.LICENSE.txt": "/moto-site/static/js/2.36e761d3.chunk.js.LICENSE.txt",
+    "static/js/2.3971384c.chunk.js.LICENSE.txt": "/moto-site/static/js/2.3971384c.chunk.js.LICENSE.txt",
     "static/media/AbrilFatface-Regular.bd2d94bc.ttf": "/moto-site/static/media/AbrilFatface-Regular.bd2d94bc.ttf",
     "static/media/Nunito-Regular.e4eb7682.ttf": "/moto-site/static/media/Nunito-Regular.e4eb7682.ttf",
     "static/media/RobotoCondensed-Bold.89a39652.ttf": "/moto-site/static/media/RobotoCondensed-Bold.89a39652.ttf",
@@ -22,7 +22,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.d7b20187.js",
-    "static/js/2.36e761d3.chunk.js",
-    "static/js/main.e2a304c9.chunk.js"
+    "static/js/2.3971384c.chunk.js",
+    "static/js/main.f0370e2a.chunk.js"
   ]
 }
