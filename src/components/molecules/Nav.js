@@ -28,8 +28,8 @@ const Nav = ({ home }) => {
             Zalety
           </NavItem>
           <StyledImg src={logo} />
-          <NavItem as={NavLink} to={pages.packages.path}>
-            Pakiety
+          <NavItem as={NavLink} to={pages.offer.path}>
+            Oferta
           </NavItem>
           <NavItem as={NavLink} to={pages.contact.path}>
             Kontakt
@@ -47,8 +47,8 @@ const Nav = ({ home }) => {
           <NavItem as={NavLink} to={pages.benefits.path}>
             Zalety
           </NavItem>
-          <NavItem as={NavLink} to={pages.packages.path}>
-            Pakiety
+          <NavItem as={NavLink} to={pages.offer.path}>
+            Oferta
           </NavItem>
           <NavItem as={NavLink} to={pages.contact.path}>
             Kontakt

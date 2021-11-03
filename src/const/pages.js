@@ -17,11 +17,11 @@ export const pages = {
     headerTitle: "Zalety",
     headerSubtitle: "Sprawdz czym sie wyrozniamy!",
   },
-  packages: {
-    location: "packages",
-    path: "/pakiety",
-    headerTitle: "Pakiety",
-    headerSubtitle: "Sprawdz nasze uslugi!",
+  offer: {
+    location: "offer",
+    path: "/oferta",
+    headerTitle: "Oferta",
+    headerSubtitle: "Sprawdz naszą ofertę!",
   },
   contact: {
     location: "contact",

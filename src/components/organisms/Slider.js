@@ -1,9 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { pages } from "../../const/pages";
-import slider1 from "../../assets/images/slider1.jpg";
-import slider2 from "../../assets/images/slider2.jpg";
-import slider3 from "../../assets/images/slider3.jpg";
+import slider from "../../assets/images/slider.jpg";
 import Title from "../atoms/Title";
 import Border from "../molecules/BorderBox";
 import Nav from "../molecules/Nav";
@@ -15,43 +13,6 @@ const StyledWrapper = styled.div`
   overflow: hidden;
 `;
 
-const StyledImg = styled.img`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  animation: changingSlider 15s linear infinite both;
-  filter: grayscale(0.5);
-
-  @keyframes changingSlider {
-    0% {
-      opacity: 0;
-    }
-
-    3%,
-    33% {
-      opacity: 1;
-    }
-
-    36% {
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 0;
-    }
-  }
-`;
-
-const StyledImg2 = styled(StyledImg)`
-  animation-delay: 5s;
-`;
-
-const StyledImg3 = styled(StyledImg)`
-  animation-delay: 10s;
-`;
-
 const StyledImgWrapper = styled.div`
   position: absolute;
   top: 0;
@@ -61,7 +22,16 @@ const StyledImgWrapper = styled.div`
   background-image: url(${({ img }) => img});
   background-size: cover;
   background-position: center;
-  animation: changingSlider 15s linear infinite both;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
 
   @keyframes changingSlider {
     0% {
@@ -81,14 +51,6 @@ const StyledImgWrapper = styled.div`
       opacity: 0;
     }
   }
-`;
-
-const StyledImgWrapper2 = styled(StyledImgWrapper)`
-  animation-delay: 5s;
-`;
-
-const StyledImgWrapper3 = styled(StyledImgWrapper)`
-  animation-delay: 10s;
 `;
 
 const StyledTextWrapper = styled.div`
@@ -106,12 +68,8 @@ const StyledTitle = styled(Title)`
 
 const Slider = ({ location }) => (
   <StyledWrapper>
-    <StyledImgWrapper img={slider1}></StyledImgWrapper>
-    <StyledImgWrapper2 img={slider2}></StyledImgWrapper2>
-    <StyledImgWrapper3 img={slider3}></StyledImgWrapper3>
-    {/* <StyledImg src={slider1} /> */}
-    {/* <StyledImg2 src={slider2} /> */}
-    {/* <StyledImg3 src={slider3} /> */}
+    <StyledImgWrapper img={slider}></StyledImgWrapper>
+    {/* <StyledImgWrapper2 img={slider2}></StyledImgWrapper2> */}
     <StyledTextWrapper>
       <StyledTitle>{pages[location].headerTitle}</StyledTitle>
       <Title small orange>

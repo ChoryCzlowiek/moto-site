@@ -1,9 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import Roboto from "../assets/fonts/RobotoCondensed-Regular.ttf";
 import RobotoBold from "../assets/fonts/RobotoCondensed-Bold.ttf";
-import Tangerine from "../assets/fonts/Tangerine-Bold.ttf";
-import Nuno from "../assets/fonts/Nunito-Regular.ttf";
-import Abril from "../assets/fonts/AbrilFatface-Regular.ttf";
+import Lato from "../assets/fonts/Lato-Bold.ttf";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -18,18 +16,8 @@ const GlobalStyle = createGlobalStyle`
 }
 
 @font-face {
-    font-family: 'Tangerine';
-    src: url(${Tangerine}) format('truetype');
-}
-
-@font-face {
-    font-family: 'Nuno';
-    src: url(${Nuno}) format('truetype');
-}
-
-@font-face {
-    font-family: 'Abril';
-    src: url(${Abril}) format('truetype');
+    font-family: 'Lato';
+    src: url(${Lato}) format('truetype');
 }
 
 *, *::before, *::after{

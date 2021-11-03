@@ -3,8 +3,9 @@ import styled from "styled-components";
 const Paragraph = styled.p`
   font-family: ${({ theme, bold }) =>
     bold ? theme.textBoldFont : theme.textFont};
-  color: ${({ theme }) => theme.black};
-  line-height: 1.3rem;
+  color: ${({ theme, white }) => (white ? theme.white : theme.black)};
+  font-size: ${({ theme, big }) => (big ? "1.3rem" : "1rem")};
+  line-height: 1.7rem;
 `;
 
 export default Paragraph;

@@ -8,14 +8,14 @@ const Button = styled.button`
   color: ${({ theme }) => theme.black};
   border: 2px solid ${({ theme }) => theme.orange};
   border-radius: 3rem;
-  box-shadow: 0 0 10px 4px ${({ theme }) => theme.orange};
+  /* box-shadow: 0 0 10px 4px ${({ theme }) => theme.orange}; */
   background-color: ${({ theme }) => theme.orange};
   cursor: pointer;
   transition: 1s;
 
   &:hover {
     color: ${({ theme }) => theme.white};
-    box-shadow: 0 0 10px 4px ${({ theme }) => theme.black};
+    /* box-shadow: 0 0 10px 4px ${({ theme }) => theme.black}; */
     background-color: ${({ theme }) => theme.black};
     border: 2px solid ${({ theme }) => theme.black};
   }

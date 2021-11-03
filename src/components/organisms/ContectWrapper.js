@@ -1,38 +1,71 @@
 import React from "react";
 import styled from "styled-components";
-import contactImg from "../../assets/images/contact.jpg";
+import contactImg from "../../assets/images/contact.jpeg";
 import ContactForm from "../molecules/ContactForm";
-import SectionWithTitle from "../molecules/SectionWithTitle";
+import Paragraph from "../atoms/Paragraph";
 
 const StyledWrapper = styled.div`
-  display: flex;
-  margin: 3rem;
-  box-shadow: 0 0 10px 10px ${({ theme }) => theme.black};
-`;
-
-const StyledBgcImg = styled.div`
-  flex-basis: 50%;
+  position: relative;
   background-image: url(${contactImg});
   background-size: cover;
   background-position: center;
-  filter: grayscale(0.8);
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  padding: 3rem 0;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
 `;
 
-const StyledFormWrapper = styled.div`
-  flex-basis: 50%;
-  padding: 3rem;
-  background-color: ${({ theme }) => theme.black};
+const StyledTextWrapper = styled.div`
+  z-index: 2;
+  padding: 3rem 0;
+`;
+
+const StyledParagraph = styled(Paragraph)`
+  margin: 1rem 0;
+`;
+
+const StyledParagraphMargin = styled(Paragraph)`
+  margin: 1rem 0 3rem;
 `;
 
 const ContactWrapper = () => (
-  <SectionWithTitle title="Jezeli masz do nas jakas sprawe, napisz wiadomosc">
-    <StyledWrapper>
-      <StyledBgcImg />
-      <StyledFormWrapper>
-        <ContactForm />
-      </StyledFormWrapper>
-    </StyledWrapper>
-  </SectionWithTitle>
+  <StyledWrapper>
+    <StyledTextWrapper>
+      <StyledParagraph white big>
+        AP System Solution
+      </StyledParagraph>
+      <StyledParagraph white big>
+        Olsztyn 10-686
+      </StyledParagraph>
+      <StyledParagraph white big>
+        Ul. Burskiego 20/15
+      </StyledParagraph>
+      <StyledParagraphMargin white big>
+        NIP 739 286 1745
+      </StyledParagraphMargin>
+      <StyledParagraph white big>
+        Tel. 606 654 763
+      </StyledParagraph>
+      <StyledParagraph white big>
+        Tel. 606 195 089
+      </StyledParagraph>
+      <StyledParagraph white big>
+        Email: kontakt@oneserwis.pl
+      </StyledParagraph>
+    </StyledTextWrapper>
+    <ContactForm />
+  </StyledWrapper>
 );
 
 export default ContactWrapper;

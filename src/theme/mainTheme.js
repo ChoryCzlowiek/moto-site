@@ -3,8 +3,8 @@ export const theme = {
   black: "rgb(19,24,44)",
   blackOpc: "rgba(19,24,44,.6)",
   white: "rgb(255,255,255)",
-  whiteOpc: "rgba(219, 219, 219, .6)",
+  whiteOpc: "rgba(255,255,255, .6)",
   textBoldFont: "RobotoBold",
-  titleFont: "Abril",
+  titleFont: "Lato",
   textFont: "Roboto",
 };

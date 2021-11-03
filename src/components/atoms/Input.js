@@ -9,6 +9,10 @@ const Input = styled.input`
   color: ${({ theme }) => theme.black};
   transition: 0.5s;
 
+  &::placeholder {
+    color: ${({ theme }) => theme.black};
+  }
+
   &:focus {
     outline: none;
     border: 2px solid ${({ theme }) => theme.orange};
