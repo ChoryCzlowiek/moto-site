@@ -52,6 +52,45 @@ const StyledImg3 = styled(StyledImg)`
   animation-delay: 10s;
 `;
 
+const StyledImgWrapper = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url(${({ img }) => img});
+  background-size: cover;
+  background-position: center;
+  animation: changingSlider 15s linear infinite both;
+
+  @keyframes changingSlider {
+    0% {
+      opacity: 0;
+    }
+
+    3%,
+    33% {
+      opacity: 1;
+    }
+
+    36% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+`;
+
+const StyledImgWrapper2 = styled(StyledImgWrapper)`
+  animation-delay: 5s;
+`;
+
+const StyledImgWrapper3 = styled(StyledImgWrapper)`
+  animation-delay: 10s;
+`;
+
 const StyledTextWrapper = styled.div`
   position: absolute;
   top: 50%;
@@ -67,9 +106,12 @@ const StyledTitle = styled(Title)`
 
 const Slider = ({ location }) => (
   <StyledWrapper>
-    <StyledImg src={slider1} />
-    <StyledImg2 src={slider2} />
-    <StyledImg3 src={slider3} />
+    <StyledImgWrapper img={slider1}></StyledImgWrapper>
+    <StyledImgWrapper2 img={slider2}></StyledImgWrapper2>
+    <StyledImgWrapper3 img={slider3}></StyledImgWrapper3>
+    {/* <StyledImg src={slider1} /> */}
+    {/* <StyledImg2 src={slider2} /> */}
+    {/* <StyledImg3 src={slider3} /> */}
     <StyledTextWrapper>
       <StyledTitle>{pages[location].headerTitle}</StyledTitle>
       <Title small orange>

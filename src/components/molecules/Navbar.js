@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Nav from "./Nav";
-import logo from "../../assets/images/logo.png";
+import Logo from "../atoms/Logo";
 
 const StyledWrapper = styled.div`
   display: flex;
@@ -11,13 +11,9 @@ const StyledWrapper = styled.div`
   padding: 1.5rem 10rem;
 `;
 
-const StyledImg = styled.img`
-  height: 2rem;
-`;
-
 const Navbar = () => (
   <StyledWrapper>
-    <StyledImg src={logo} />
+    <Logo />
     <Nav />
   </StyledWrapper>
 );

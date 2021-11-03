@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { pages } from "../../const/pages";
 import styled from "styled-components";
 import NavItem from "../atoms/NavItem";
+import logo from "../../assets/images/logo.png";
 
 const StyledUlWrapper = styled.ul`
   list-style: none;
@@ -12,19 +13,21 @@ const StyledUlWrapper = styled.ul`
   transform: translateY(${({ home }) => (home ? "-50%" : 0)});
 `;
 
+const StyledImg = styled.img`
+  height: 2rem;
+`;
+
 const Nav = ({ home }) => {
   const navigationView = home
     ? [
         <StyledUlWrapper home>
-          <NavItem as={NavLink} to={pages.aboutUs.path}>
+          <NavItem as={NavLink} to={pages.aboutUs.path} black>
             O Nas
           </NavItem>
-          <NavItem as={NavLink} to={pages.benefits.path}>
+          <NavItem as={NavLink} to={pages.benefits.path} black>
             Zalety
           </NavItem>
-          <NavItem title as={NavLink} to={pages.home.path}>
-            NAZWA
-          </NavItem>
+          <StyledImg src={logo} />
           <NavItem as={NavLink} to={pages.packages.path}>
             Pakiety
           </NavItem>
