@@ -3,7 +3,7 @@ import styled from "styled-components";
 const ListItem = styled.li`
   font-family: ${({ theme, title }) =>
     title ? theme.titleFont : theme.textBoldFont};
-  color: ${({ theme }) => theme.yellow};
+  color: ${({ theme }) => theme.orange};
   cursor: pointer;
   margin: 0 1rem;
   font-size: ${({ title }) => (title ? "2rem" : "1.3rem")};
@@ -18,7 +18,7 @@ const ListItem = styled.li`
   &:link,
   &:active {
     text-decoration: none;
-    color: ${({ theme }) => theme.blue};
+    color: ${({ theme }) => theme.orange};
   }
 `;
 

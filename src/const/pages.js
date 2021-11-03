@@ -17,10 +17,10 @@ export const pages = {
     headerTitle: "Zalety",
     headerSubtitle: "Sprawdz czym sie wyrozniamy!",
   },
-  priceList: {
-    location: "priceList",
-    path: "/cennik",
-    headerTitle: "Cennik",
+  packages: {
+    location: "packages",
+    path: "/pakiety",
+    headerTitle: "Pakiety",
     headerSubtitle: "Sprawdz nasze uslugi!",
   },
   contact: {

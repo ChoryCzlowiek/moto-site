@@ -38,15 +38,17 @@ const StyledTitle = styled(Title)`
 `;
 
 const Header = ({ location }) => (
-  <StyledWrapper>
+  <>
     <Navbar />
-    <TextWrapper>
-      <StyledTitle>{pages[location].headerTitle}</StyledTitle>
-      <Title small yellow>
-        {pages[location].headerSubtitle}
-      </Title>
-    </TextWrapper>
-  </StyledWrapper>
+    <StyledWrapper>
+      <TextWrapper>
+        <StyledTitle orange>{pages[location].headerTitle}</StyledTitle>
+        <Title small orange>
+          {pages[location].headerSubtitle}
+        </Title>
+      </TextWrapper>
+    </StyledWrapper>
+  </>
 );
 
 export default Header;

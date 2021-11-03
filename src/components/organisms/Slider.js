@@ -22,7 +22,7 @@ const StyledImg = styled.img`
   width: 100%;
   height: 100%;
   animation: changingSlider 15s linear infinite both;
-  filter: grayscale(0.8);
+  filter: grayscale(0.5);
 
   @keyframes changingSlider {
     0% {
@@ -58,6 +58,7 @@ const StyledTextWrapper = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  z-index: 10;
 `;
 
 const StyledTitle = styled(Title)`
@@ -71,7 +72,7 @@ const Slider = ({ location }) => (
     <StyledImg3 src={slider3} />
     <StyledTextWrapper>
       <StyledTitle>{pages[location].headerTitle}</StyledTitle>
-      <Title small yellow>
+      <Title small orange>
         {pages[location].headerSubtitle}
       </Title>
     </StyledTextWrapper>

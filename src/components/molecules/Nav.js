@@ -12,31 +12,48 @@ const StyledUlWrapper = styled.ul`
   transform: translateY(${({ home }) => (home ? "-50%" : 0)});
 `;
 
-const Nav = ({ home }) => (
-  <StyledUlWrapper home>
-    {!home && (
-      <NavItem as={NavLink} to={pages.home.path}>
-        Strona Główna
-      </NavItem>
-    )}
-    <NavItem as={NavLink} to={pages.aboutUs.path}>
-      O Nas
-    </NavItem>
-    <NavItem as={NavLink} to={pages.benefits.path}>
-      Zalety
-    </NavItem>
-    {home && (
-      <NavItem title as={NavLink} to={pages.home.path}>
-        NAZWA
-      </NavItem>
-    )}
-    <NavItem as={NavLink} to={pages.priceList.path}>
-      Cennik
-    </NavItem>
-    <NavItem as={NavLink} to={pages.contact.path}>
-      Kontakt
-    </NavItem>
-  </StyledUlWrapper>
-);
+const Nav = ({ home }) => {
+  const navigationView = home
+    ? [
+        <StyledUlWrapper home>
+          <NavItem as={NavLink} to={pages.aboutUs.path}>
+            O Nas
+          </NavItem>
+          <NavItem as={NavLink} to={pages.benefits.path}>
+            Zalety
+          </NavItem>
+          <NavItem title as={NavLink} to={pages.home.path}>
+            NAZWA
+          </NavItem>
+          <NavItem as={NavLink} to={pages.packages.path}>
+            Pakiety
+          </NavItem>
+          <NavItem as={NavLink} to={pages.contact.path}>
+            Kontakt
+          </NavItem>
+        </StyledUlWrapper>,
+      ]
+    : [
+        <StyledUlWrapper>
+          <NavItem as={NavLink} to={pages.home.path}>
+            Strona Główna
+          </NavItem>
+          <NavItem as={NavLink} to={pages.aboutUs.path}>
+            O Nas
+          </NavItem>
+          <NavItem as={NavLink} to={pages.benefits.path}>
+            Zalety
+          </NavItem>
+          <NavItem as={NavLink} to={pages.packages.path}>
+            Pakiety
+          </NavItem>
+          <NavItem as={NavLink} to={pages.contact.path}>
+            Kontakt
+          </NavItem>
+        </StyledUlWrapper>,
+      ];
+
+  return <>{navigationView}</>;
+};
 
 export default Nav;

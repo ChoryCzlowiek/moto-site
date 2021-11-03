@@ -7,7 +7,7 @@ const StyledBorder = styled.div`
   top: 5%;
   height: 90%;
   width: 90%;
-  border: 3px solid ${({ theme }) => theme.yellow};
+  border: 3px solid ${({ theme }) => theme.orange};
   border-top: none;
 `;
 
@@ -17,7 +17,7 @@ const BorderTopLeft = styled.div`
   top: 0;
   width: 10%;
   height: 100%;
-  border-top: 3px solid ${({ theme }) => theme.yellow};
+  border-top: 3px solid ${({ theme }) => theme.orange};
 `;
 
 const BorderTopRight = styled(BorderTopLeft)`
