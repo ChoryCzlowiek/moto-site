@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/moto-site/static/js/main.5ba893ee.chunk.js",
-    "main.js.map": "/moto-site/static/js/main.5ba893ee.chunk.js.map",
+    "main.js": "/moto-site/static/js/main.98d0801b.chunk.js",
+    "main.js.map": "/moto-site/static/js/main.98d0801b.chunk.js.map",
     "runtime-main.js": "/moto-site/static/js/runtime-main.d7b20187.js",
     "runtime-main.js.map": "/moto-site/static/js/runtime-main.d7b20187.js.map",
     "static/js/2.3971384c.chunk.js": "/moto-site/static/js/2.3971384c.chunk.js",
@@ -14,15 +14,16 @@
     "static/media/RobotoCondensed-Regular.db6d9169.ttf": "/moto-site/static/media/RobotoCondensed-Regular.db6d9169.ttf",
     "static/media/Tangerine-Bold.2456ce02.ttf": "/moto-site/static/media/Tangerine-Bold.2456ce02.ttf",
     "static/media/contact.53289e73.jpg": "/moto-site/static/media/contact.53289e73.jpg",
-    "static/media/header.9cc3b07a.jpg": "/moto-site/static/media/header.9cc3b07a.jpg",
+    "static/media/header.aadac80d.jpeg": "/moto-site/static/media/header.aadac80d.jpeg",
     "static/media/logo.99b638f1.png": "/moto-site/static/media/logo.99b638f1.png",
-    "static/media/slider1.7fe63dab.jpg": "/moto-site/static/media/slider1.7fe63dab.jpg",
-    "static/media/slider2.87cc78d2.jpg": "/moto-site/static/media/slider2.87cc78d2.jpg",
-    "static/media/slider3.7951549d.jpg": "/moto-site/static/media/slider3.7951549d.jpg"
+    "static/media/onas.e4cf4498.jpg": "/moto-site/static/media/onas.e4cf4498.jpg",
+    "static/media/slider1.d1d43e14.jpg": "/moto-site/static/media/slider1.d1d43e14.jpg",
+    "static/media/slider2.dfb608fa.jpg": "/moto-site/static/media/slider2.dfb608fa.jpg",
+    "static/media/slider3.54adb289.jpg": "/moto-site/static/media/slider3.54adb289.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.d7b20187.js",
     "static/js/2.3971384c.chunk.js",
-    "static/js/main.5ba893ee.chunk.js"
+    "static/js/main.98d0801b.chunk.js"
   ]
 }
