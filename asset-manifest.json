@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/moto-site/static/js/main.46dd5ed1.chunk.js",
-    "main.js.map": "/moto-site/static/js/main.46dd5ed1.chunk.js.map",
+    "main.js": "/moto-site/static/js/main.092c8d06.chunk.js",
+    "main.js.map": "/moto-site/static/js/main.092c8d06.chunk.js.map",
     "runtime-main.js": "/moto-site/static/js/runtime-main.d7b20187.js",
     "runtime-main.js.map": "/moto-site/static/js/runtime-main.d7b20187.js.map",
     "static/js/2.14721a57.chunk.js": "/moto-site/static/js/2.14721a57.chunk.js",
@@ -21,7 +21,6 @@
     "static/media/onas.c2981bf0.jpg": "/moto-site/static/media/onas.c2981bf0.jpg",
     "static/media/program.1bb21e10.jpg": "/moto-site/static/media/program.1bb21e10.jpg",
     "static/media/radca.c1fcb534.jpg": "/moto-site/static/media/radca.c1fcb534.jpg",
-    "static/media/slider.1029282a.jpg": "/moto-site/static/media/slider.1029282a.jpg",
     "static/media/trainings.640e30ae.jpg": "/moto-site/static/media/trainings.640e30ae.jpg",
     "static/media/wspolpraca.2601cd18.png": "/moto-site/static/media/wspolpraca.2601cd18.png",
     "static/media/wspolpraca2.e8a2a505.png": "/moto-site/static/media/wspolpraca2.e8a2a505.png",
@@ -30,6 +29,6 @@
   "entrypoints": [
     "static/js/runtime-main.d7b20187.js",
     "static/js/2.14721a57.chunk.js",
-    "static/js/main.46dd5ed1.chunk.js"
+    "static/js/main.092c8d06.chunk.js"
   ]
 }
