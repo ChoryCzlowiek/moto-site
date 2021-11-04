@@ -4,6 +4,7 @@ import { pages } from "../../const/pages";
 import styled from "styled-components";
 import NavItem from "../atoms/NavItem";
 import logo from "../../assets/images/logo.png";
+import Logo from "../atoms/Logo";
 
 const StyledUlWrapper = styled.ul`
   list-style: none;
@@ -15,15 +16,11 @@ const StyledUlWrapper = styled.ul`
   margin: ${({ vertical }) => (vertical ? ".5rem 0 0" : "0")};
 `;
 
-const StyledImg = styled.img`
-  height: 2rem;
-`;
-
 const StyledNavItem = styled(NavItem)`
   margin: 0.2rem 0;
 `;
 
-const Nav = ({ home, vertical }) => {
+const Nav = ({ home, vertical, onClick }) => {
   const navigationView = home
     ? [
         <StyledUlWrapper home>
@@ -33,7 +30,7 @@ const Nav = ({ home, vertical }) => {
           <NavItem as={NavLink} to={pages.zalety.path} black>
             Zalety
           </NavItem>
-          <StyledImg src={logo} />
+          <Logo />
           <NavItem as={NavLink} to={pages.oferta.path}>
             Oferta
           </NavItem>

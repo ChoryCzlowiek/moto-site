@@ -43,7 +43,6 @@ const OfferBox = ({ img, reverseOrder, title, text, path }) => {
   const history = useHistory();
 
   const redirectToSubsite = () => {
-    console.log("git");
     history.push(path);
   };
 

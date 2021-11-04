@@ -4,6 +4,7 @@ import Logo from "../atoms/Logo";
 import ContactData from "../molecules/ContactData";
 import Nav from "../molecules/Nav";
 import footer from "../../assets/images/footer.jpg";
+import { useHistory } from "react-router";
 
 const StyledWrapper = styled.div`
   padding: 3rem 0;
@@ -45,15 +46,23 @@ const BreakLine = styled.div`
   z-index: 2;
 `;
 
-const Footer = () => (
-  <StyledWrapper>
-    <StyledNavWrapper>
-      <Logo />
-      <StyledNav vertical />
-    </StyledNavWrapper>
-    <ContactData footer />
-    <BreakLine />
-  </StyledWrapper>
-);
+const Footer = () => {
+  const history = useHistory();
+
+  const redirectToHome = () => {
+    history.push("/");
+  };
+
+  return (
+    <StyledWrapper>
+      <StyledNavWrapper>
+        <Logo onClick={redirectToHome} />
+        <StyledNav vertical />
+      </StyledNavWrapper>
+      <ContactData footer />
+      <BreakLine />
+    </StyledWrapper>
+  );
+};
 
 export default Footer;

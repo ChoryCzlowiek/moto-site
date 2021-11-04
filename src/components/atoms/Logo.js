@@ -7,6 +7,6 @@ const StyledLogo = styled.img`
   cursor: pointer;
 `;
 
-const Logo = () => <StyledLogo src={logo} />;
+const Logo = ({ onClick }) => <StyledLogo onClick={onClick} src={logo} />;
 
 export default Logo;

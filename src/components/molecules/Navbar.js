@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router";
 import styled from "styled-components";
 import Nav from "./Nav";
 import Logo from "../atoms/Logo";
@@ -13,9 +14,19 @@ const StyledWrapper = styled.div`
 `;
 
 const Navbar = () => {
+  const history = useHistory();
+
+  const redirectToHome = () => {
+    history.push("/");
+  };
+
   return (
     <StyledWrapper>
-      <Logo />
+      <Logo
+        onClick={() => {
+          redirectToHome();
+        }}
+      />
       <Nav />
     </StyledWrapper>
   );
