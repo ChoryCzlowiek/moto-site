@@ -1,11 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Header from "../components/organisms/Header";
+import Footer from "../components/organisms/Footer";
 
-const PageTemplate = ({ children, location }) => (
+const PageTemplate = ({ children }) => (
   <>
-    <Header location={location} />
+    <Header />
     {children}
+    <Footer />
   </>
 );
 

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Title from "../atoms/Title";
 import Paragraph from "../atoms/Paragraph";
 import Button from "../atoms/Button";
+import { useHistory } from "react-router-dom";
 
 const StyledWrapper = styled.div`
   margin: 0 10rem 4rem;
@@ -38,22 +39,22 @@ const StyledButton = styled(Button)`
   margin: 2rem 0 0;
 `;
 
-const OfferBox = ({ img, reverseOrder }) => {
+const OfferBox = ({ img, reverseOrder, title, text, path }) => {
+  const history = useHistory();
+
+  const redirectToSubsite = () => {
+    console.log("git");
+    history.push(path);
+  };
+
   const componentsOrder = reverseOrder
     ? [
         <StyledTextWrapper reverse>
           <StyledTitle orange small>
-            Przykladowy pakiet
+            {title}
           </StyledTitle>
-          <Paragraph>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in
-            imperdiet enim. In faucibus nisi et rhoncus finibus. Nulla auctor,
-            magna at faucibus laoreet, quam sem rutrum elit, eget euismod eros
-            libero at nunc. In tincidunt orci non nunc finibus interdum. Integer
-            tristique ante in ultricies sagittis. Morbi tincidunt libero sem,
-            fermentum pharetra leo porta id.
-          </Paragraph>
-          <StyledButton>Czytaj wiecej</StyledButton>
+          <Paragraph>{text}</Paragraph>
+          <StyledButton onClick={redirectToSubsite}>Więcej...</StyledButton>
         </StyledTextWrapper>,
         <StyledImgWrapper img={img} />,
       ]
@@ -61,26 +62,14 @@ const OfferBox = ({ img, reverseOrder }) => {
         <StyledImgWrapper img={img} />,
         <StyledTextWrapper>
           <StyledTitle orange small>
-            Przykladowy pakiet
+            {title}
           </StyledTitle>
-          <Paragraph>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in
-            imperdiet enim. In faucibus nisi et rhoncus finibus. Nulla auctor,
-            magna at faucibus laoreet, quam sem rutrum elit, eget euismod eros
-            libero at nunc. In tincidunt orci non nunc finibus interdum. Integer
-            tristique ante in ultricies sagittis. Morbi tincidunt libero sem,
-            fermentum pharetra leo porta id.
-          </Paragraph>
-          <StyledButton>Czytaj wiecej</StyledButton>
+          <Paragraph>{text}</Paragraph>
+          <StyledButton onClick={redirectToSubsite}>Więcej...</StyledButton>
         </StyledTextWrapper>,
       ];
 
-  return (
-    <StyledWrapper>
-      {/* <BorderBox /> */}
-      {componentsOrder}
-    </StyledWrapper>
-  );
+  return <StyledWrapper>{componentsOrder}</StyledWrapper>;
 };
 
 export default OfferBox;

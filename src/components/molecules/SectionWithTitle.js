@@ -3,7 +3,7 @@ import Title from "../atoms/Title";
 import styled from "styled-components";
 
 const StyledTitle = styled(Title)`
-  margin: 3rem 0;
+  margin: 3rem 10rem;
   text-align: center;
 `;
 

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const ListItem = styled.li`
+const NavItem = styled.li`
   font-family: ${({ theme, title }) =>
     title ? theme.titleFont : theme.textBoldFont};
   color: ${({ theme, black }) => (black ? theme.black : theme.orange)};
@@ -21,4 +21,4 @@ const ListItem = styled.li`
   }
 `;
 
-export default ListItem;
+export default NavItem;

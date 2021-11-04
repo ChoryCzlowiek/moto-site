@@ -1,10 +1,11 @@
 import React from "react";
-import { pages } from "../const/pages";
-
+import BenefitsWrapper from "../components/organisms/BenefitsWrapper";
 import PageTemplate from "./PageTemplate";
 
 const BenefitsTemplate = () => (
-  <PageTemplate location={pages.benefits.location}></PageTemplate>
+  <PageTemplate>
+    <BenefitsWrapper />
+  </PageTemplate>
 );
 
 export default BenefitsTemplate;

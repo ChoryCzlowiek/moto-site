@@ -69,11 +69,10 @@ const StyledTitle = styled(Title)`
 const Slider = ({ location }) => (
   <StyledWrapper>
     <StyledImgWrapper img={slider}></StyledImgWrapper>
-    {/* <StyledImgWrapper2 img={slider2}></StyledImgWrapper2> */}
     <StyledTextWrapper>
-      <StyledTitle>{pages[location].headerTitle}</StyledTitle>
+      <StyledTitle orange>{pages[location].sliderTitle}</StyledTitle>
       <Title small orange>
-        {pages[location].headerSubtitle}
+        {pages[location].sliderSubtitle}
       </Title>
     </StyledTextWrapper>
     <Border>
