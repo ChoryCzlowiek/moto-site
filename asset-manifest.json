@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.js": "/moto-site/static/js/main.ae79eae9.chunk.js",
-    "main.js.map": "/moto-site/static/js/main.ae79eae9.chunk.js.map",
+    "main.js": "/moto-site/static/js/main.201270d8.chunk.js",
+    "main.js.map": "/moto-site/static/js/main.201270d8.chunk.js.map",
     "runtime-main.js": "/moto-site/static/js/runtime-main.d7b20187.js",
     "runtime-main.js.map": "/moto-site/static/js/runtime-main.d7b20187.js.map",
-    "static/js/2.14721a57.chunk.js": "/moto-site/static/js/2.14721a57.chunk.js",
-    "static/js/2.14721a57.chunk.js.map": "/moto-site/static/js/2.14721a57.chunk.js.map",
+    "static/js/2.a179df09.chunk.js": "/moto-site/static/js/2.a179df09.chunk.js",
+    "static/js/2.a179df09.chunk.js.map": "/moto-site/static/js/2.a179df09.chunk.js.map",
     "index.html": "/moto-site/index.html",
-    "static/js/2.14721a57.chunk.js.LICENSE.txt": "/moto-site/static/js/2.14721a57.chunk.js.LICENSE.txt",
+    "static/js/2.a179df09.chunk.js.LICENSE.txt": "/moto-site/static/js/2.a179df09.chunk.js.LICENSE.txt",
     "static/media/Lato-Bold.5dd5aa02.ttf": "/moto-site/static/media/Lato-Bold.5dd5aa02.ttf",
     "static/media/RobotoCondensed-Bold.89a39652.ttf": "/moto-site/static/media/RobotoCondensed-Bold.89a39652.ttf",
     "static/media/RobotoCondensed-Regular.db6d9169.ttf": "/moto-site/static/media/RobotoCondensed-Regular.db6d9169.ttf",
     "static/media/aboutColab.0e93e8e8.png": "/moto-site/static/media/aboutColab.0e93e8e8.png",
     "static/media/assistant.7292f01d.jpg": "/moto-site/static/media/assistant.7292f01d.jpg",
     "static/media/clipBoxImg.7b3525fc.jpg": "/moto-site/static/media/clipBoxImg.7b3525fc.jpg",
+    "static/media/clipBoxImg2.9e6aea1c.jpg": "/moto-site/static/media/clipBoxImg2.9e6aea1c.jpg",
     "static/media/contact.365b7818.jpeg": "/moto-site/static/media/contact.365b7818.jpeg",
+    "static/media/facebook.6b2900c6.png": "/moto-site/static/media/facebook.6b2900c6.png",
     "static/media/footer.0bea6589.jpg": "/moto-site/static/media/footer.0bea6589.jpg",
     "static/media/legalProtection.a358256f.jpg": "/moto-site/static/media/legalProtection.a358256f.jpg",
     "static/media/logo.99b638f1.png": "/moto-site/static/media/logo.99b638f1.png",
@@ -23,12 +25,12 @@
     "static/media/radca.c1fcb534.jpg": "/moto-site/static/media/radca.c1fcb534.jpg",
     "static/media/trainings.640e30ae.jpg": "/moto-site/static/media/trainings.640e30ae.jpg",
     "static/media/wspolpraca.2601cd18.png": "/moto-site/static/media/wspolpraca.2601cd18.png",
-    "static/media/wspolpraca2.e8a2a505.png": "/moto-site/static/media/wspolpraca2.e8a2a505.png",
-    "static/media/www.457b984b.jpg": "/moto-site/static/media/www.457b984b.jpg"
+    "static/media/www.457b984b.jpg": "/moto-site/static/media/www.457b984b.jpg",
+    "static/media/youtube.e674500b.png": "/moto-site/static/media/youtube.e674500b.png"
   },
   "entrypoints": [
     "static/js/runtime-main.d7b20187.js",
-    "static/js/2.14721a57.chunk.js",
-    "static/js/main.ae79eae9.chunk.js"
+    "static/js/2.a179df09.chunk.js",
+    "static/js/main.201270d8.chunk.js"
   ]
 }
