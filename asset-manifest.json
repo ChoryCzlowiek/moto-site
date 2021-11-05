@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/moto-site/static/js/main.201270d8.chunk.js",
-    "main.js.map": "/moto-site/static/js/main.201270d8.chunk.js.map",
+    "main.js": "/moto-site/static/js/main.a028265f.chunk.js",
+    "main.js.map": "/moto-site/static/js/main.a028265f.chunk.js.map",
     "runtime-main.js": "/moto-site/static/js/runtime-main.d7b20187.js",
     "runtime-main.js.map": "/moto-site/static/js/runtime-main.d7b20187.js.map",
     "static/js/2.a179df09.chunk.js": "/moto-site/static/js/2.a179df09.chunk.js",
@@ -14,10 +14,11 @@
     "static/media/aboutColab.0e93e8e8.png": "/moto-site/static/media/aboutColab.0e93e8e8.png",
     "static/media/assistant.7292f01d.jpg": "/moto-site/static/media/assistant.7292f01d.jpg",
     "static/media/clipBoxImg.7b3525fc.jpg": "/moto-site/static/media/clipBoxImg.7b3525fc.jpg",
-    "static/media/clipBoxImg2.9e6aea1c.jpg": "/moto-site/static/media/clipBoxImg2.9e6aea1c.jpg",
+    "static/media/clipBoxImg2.be28aa8f.jpeg": "/moto-site/static/media/clipBoxImg2.be28aa8f.jpeg",
     "static/media/contact.365b7818.jpeg": "/moto-site/static/media/contact.365b7818.jpeg",
     "static/media/facebook.6b2900c6.png": "/moto-site/static/media/facebook.6b2900c6.png",
     "static/media/footer.0bea6589.jpg": "/moto-site/static/media/footer.0bea6589.jpg",
+    "static/media/homeColab.b4d5c74c.jpg": "/moto-site/static/media/homeColab.b4d5c74c.jpg",
     "static/media/legalProtection.a358256f.jpg": "/moto-site/static/media/legalProtection.a358256f.jpg",
     "static/media/logo.99b638f1.png": "/moto-site/static/media/logo.99b638f1.png",
     "static/media/onas.c2981bf0.jpg": "/moto-site/static/media/onas.c2981bf0.jpg",
@@ -31,6 +32,6 @@
   "entrypoints": [
     "static/js/runtime-main.d7b20187.js",
     "static/js/2.a179df09.chunk.js",
-    "static/js/main.201270d8.chunk.js"
+    "static/js/main.a028265f.chunk.js"
   ]
 }
