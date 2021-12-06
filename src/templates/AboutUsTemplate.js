@@ -1,12 +1,13 @@
 import React from "react";
 import AboutUsWrapper from "../components/organisms/AboutUsWrapper";
-import Collaboration from "../components/organisms/Collaboration";
+import Colaboration from "../components/organisms/Colaboration";
 import PageTemplate from "./PageTemplate";
+import colabImg from "../assets/images/aboutColab.png";
 
 const AboutUsTemplate = () => (
   <PageTemplate>
     <AboutUsWrapper />
-    <Collaboration />
+    <Colaboration img={colabImg} />
   </PageTemplate>
 );
 

@@ -1,5 +1,5 @@
 import React from "react";
-import ContactWrapper from "../components/organisms/ContectWrapper";
+import ContactWrapper from "../components/organisms/ContactWrapper";
 import PageTemplate from "./PageTemplate";
 
 const ContactTemplate = () => (

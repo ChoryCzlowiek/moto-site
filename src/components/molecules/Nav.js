@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import { pages } from "../../const/pages";
 import styled from "styled-components";
 import NavItem from "../atoms/NavItem";
-import logo from "../../assets/images/logo.png";
 import Logo from "../atoms/Logo";
 
 const StyledUlWrapper = styled.ul`
@@ -12,7 +11,7 @@ const StyledUlWrapper = styled.ul`
   flex-direction: ${({ vertical }) => (vertical ? "column" : "row")};
   justify-content: ${({ vertical }) => (vertical ? "center" : "space-between")};
   padding: ${({ home }) => (home ? "0 15%" : "0")};
-  transform: translateY(${({ home }) => (home ? "-50%" : 0)});
+  /* transform: translateY(${({ home }) => (home ? "-50%" : 0)}); */
   margin: ${({ vertical }) => (vertical ? ".5rem 0 0" : "0")};
 `;
 
@@ -20,23 +19,23 @@ const StyledNavItem = styled(NavItem)`
   margin: 0.2rem 0;
 `;
 
-const Nav = ({ home, vertical, onClick }) => {
+const Nav = ({ home, vertical, onClick, isMenuVisible }) => {
   const navigationView = home
     ? [
         <StyledUlWrapper home>
-          <NavItem as={NavLink} to={pages.oNas.path} black>
+          <NavItem as={NavLink} to={pages.oNas.path} black bold>
             O Nas
           </NavItem>
-          <NavItem as={NavLink} to={pages.zalety.path} black>
+          <NavItem as={NavLink} to={pages.zalety.path} black bold>
             Zalety
           </NavItem>
-          <Logo />
-          <NavItem as={NavLink} to={pages.oferta.path}>
+          <NavItem as={NavLink} to={pages.oferta.path} bold>
             Oferta
           </NavItem>
-          <NavItem as={NavLink} to={pages.kontakt.path}>
+          <NavItem as={NavLink} to={pages.kontakt.path} bold>
             Kontakt
           </NavItem>
+          <Logo />
         </StyledUlWrapper>,
       ]
     : [

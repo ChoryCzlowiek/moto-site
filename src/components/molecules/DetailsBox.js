@@ -14,12 +14,11 @@ const StyledDetailsBox = styled.div`
 `;
 
 const StyledImg = styled.div`
-  width: 30rem;
   height: 30rem;
+  flex-basis: 50%;
   background-image: url(${({ img }) => img});
   background-size: cover;
   background-position: center;
-  border-radius: 50%;
 `;
 
 const StyledTitle = styled(Title)`
@@ -27,7 +26,7 @@ const StyledTitle = styled(Title)`
 `;
 
 const StyledTextWrapper = styled.div`
-  flex-basis: 50%;
+  flex-basis: 45%;
 `;
 
 const DetailsBox = ({ reverse, title, text, img, ifLast }) => {

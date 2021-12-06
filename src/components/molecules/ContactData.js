@@ -36,9 +36,6 @@ const ContactData = ({ footer }) => {
           <Paragraph white big>
             Tel. 606 195 089
           </Paragraph>
-          <Paragraph white big>
-            Email: kontakt@oneserwis.pl
-          </Paragraph>
         </StyledTextWrapper>,
       ]
     : [

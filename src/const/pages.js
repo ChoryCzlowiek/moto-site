@@ -15,20 +15,25 @@ export const pages = {
     items: [
       {
         title: "Co daje OneSerwis?",
-        text: "OneSerwis to przede wszystkim znacznie uproszczony proces wysyłania prezentacji wideo do klienta, co skraca czas potrzebny na załatwienie wszystkich formalności. Prosta procedura akceptacji klienta eliminuje wszelkie problemy związane z niezrozumieniem wszystkich warunków współpracy. Nigdy więcej problemów takich jak; klient nie widział, klient nie słyszał.",
+        text: "Każdy warsztat zainteresowany współpracą może dołączyć do sieci OneSerwis i szczycić się ponadczasowymi rozwiązaniami, które przyciągną nowych klientów i zagwarantują najwyższą jakość obsługi.",
         gridArea: "first",
       },
       {
         title:
           "OneSerwis współpracuje z ADAC i EIEA, a co dokładnie otrzymuje warsztat przy dołączeniu do OneSerwis?",
-        text: "Dołączenie do OneSerwis wiąże się z wieloma korzyściami dla warsztatu, o które cieżko w całej Polsce. To kompleksowa obsługa warsztatu oraz pomoc w budowaniu pozycji na rynku.",
+        text: "Dołączenie do OneSerwis wiąże się z wieloma korzyściami dla warsztatu, o które cieżko w całej Polsce. To kompleksowa obsługa warsztatu oraz pomoc w budowaniu pozycji na rynku. Rzeczoznawca, radca prawny i ubezpieczenie. Usługa expert na etacie. Usługa odszkodowań zawiera szereg pakietów mających na celu zredukowanie kosztów w procesie prowadzenia warsztatu.",
         gridArea: "second",
       },
       {
         title:
           "O to w skrócie na co może liczyć każdy warsztat w sieci OneSerwis",
-        text: "Każdy warsztat zainteresowany współpracą może dołączyć do sieci OneSerwis i szczycić się ponadczasowymi rozwiązaniami, które przyciągną nowych klientów i zagwarantują najwyższą jakość obsługi.",
+        text: "Każdy warsztat zainteresowany współpracą może dołączyć do sieci OneSerwis i szczycić się ponadczasowymi rozwiązaniami, które przyciągną nowych klientów i zagwarantują najwyższą jakość obsługi. CRM - Specjalny program warsztatów serwisowych wspierający warsztaty wideo obsługi klienta. Strona www - Strona zawierająca podstawowe informacje jak kontakt, cennik, zakres usług. Edycja zawrości strony jest intuicyjna, prosta w obsłudze i nie wymaga znajomośći programowanie",
         gridArea: "third",
+      },
+      {
+        title: "Co możemy zaproponować?",
+        text: "Szkolenie z obsługi programu i akceptacji klienta, Obrandowanie, Promocja w mediach społecznościowych i wyszukiwarkach Google",
+        gridArea: "fourth",
       },
     ],
   },
@@ -74,14 +79,14 @@ export const pages = {
       {
         title: "Asystent na etacie",
         textList: [
-          "konsulatcje pomocy technicznej dedykowanego rzeczoznawcy",
-          "nadzór na prowadzeniem prac warsztatowych",
-          "pomoc przy zakupie pojazdu ( badanie technicze weryfikacja pojazdu w międzynarodowych bazach danych )",
-          "opinie technczne przez biegłego rzezcoznawcę",
-          "reprezentowanie przed Administarcją Państwową",
-          "mediacje w sporach",
-          "kalkulacje napraw na zlecenie klienta w systemach komputerowych ( AUDATEX, EUROTAX, DAT )",
-          "wykonanie wyceny pojazdu na zlecenie klienta w systemach ( INFO-EXPERT, EUROTAX )",
+          "Konsulatcje pomocy technicznej dedykowanego rzeczoznawcy",
+          "Nadzór na prowadzeniem prac warsztatowych",
+          "Pomoc przy zakupie pojazdu ( badanie technicze weryfikacja pojazdu w międzynarodowych bazach danych )",
+          "Opinie technczne przez biegłego rzezcoznawcę",
+          "Reprezentowanie przed Administarcją Państwową",
+          "Mediacje w sporach",
+          "Kalkulacje napraw na zlecenie klienta w systemach komputerowych ( AUDATEX, EUROTAX, DAT )",
+          "Wykonanie wyceny pojazdu na zlecenie klienta w systemach ( INFO-EXPERT, EUROTAX )",
         ],
         img: "assistant",
       },
@@ -99,9 +104,9 @@ export const pages = {
       {
         title: "Szkolenia",
         textList: [
-          "stacjonarne organizowane przez ADAC Europe",
-          "online organizowane przez ADAC Europe",
-          "zniżki na szkolenia oragnizowane przez ADAC",
+          "Stacjonarne organizowane przez ADAC Europe",
+          "Online organizowane przez ADAC Europe",
+          "Zniżki na szkolenia oragnizowane przez ADAC",
         ],
         img: "trainings",
       },
@@ -111,12 +116,17 @@ export const pages = {
     name: "Program dla warsztatów dedykowany dla sieci OneSerwis",
     items: [
       {
-        title: "Program dla warsztatów",
+        title: "Program dla warsztatów dedykowany dla sieci OneSerwis",
         textList: [
-          "Dzięki naszemu profesjonalnemu systemowi warsztatów samochodowych Twój klient zapamięta Cię raz na zawsze",
-          "Rozwiązanie zaimplementowane w formie powiadomień jest idealnym zwieńczeniem kompletnego oprogramowania",
-          "Możesz stworzyć usługę powiadamiania zgodnie ze swoimi preferencjami",
-          "Konsultant serwisowy i klient otrzymują powiadomienia w formie e-maili i sms o upływie terminu ważności badania technicznego, aby mogli skontaktować się z klientem i zorganizować przegląd i ewentualne naprawy",
+          "Baza danych klientów",
+          "Baza danych pojazdów",
+          "Historia napraw",
+          "Magazyn i fakturowanie",
+          "Kalendarz zleceń",
+          "Bez limitu ilość magazynów przypisanych do warztatu",
+          "Bez limitu ilość stanowisk (doradców serwisowych i techników)",
+          "Video Obsługa Klienta",
+          "Powiadomienia SMS, E-mail",
         ],
         img: "program",
       },
@@ -126,13 +136,38 @@ export const pages = {
     name: "Strona WWW, obrandowanie, kampanie reklamowe",
     items: [
       {
-        title: "Szkolenia",
+        title: "Strona WWW",
         textList: [
-          "stacjonarne organizowane przez ADAC Europe",
-          "online organizowane przez ADAC Europe  ",
-          "zniżki na szkolenia oragnizowane przez ADAC",
+          "Strona zawierająca podstawowe informacje jak kontakt, cennik, zakres usług",
+          "Do każdej strony jest podpięty aplikacja Messenger, aby ułatwić komunikację z klientem",
+          "Serwis możemy prowadzić my za dodatkową opłatą",
         ],
-        img: "trainings",
+        img: "wwwDetails",
+      },
+      {
+        title: "Promocja w mediach społecznościowych",
+        textList: [
+          "Promocja warsztatów oneserwis jest sponsorowana w miastach, w którycn funkcjonuje OneSerwis",
+          "Materiały będą opłacane przez nas - sponsorowane grafiki i filmy mające na celu zwiększenie liczby klientów",
+        ],
+        img: "media",
+        reverse: "reverse",
+      },
+      {
+        title: "Google Advertising",
+        textList: [
+          "Kampanie reklamowe w Google Ads będą przez nas realizowane i przypisane indywidualnie do danego warsztatu",
+          "Kampania reklamowa  jest przez nas finansowana",
+        ],
+        img: "google",
+      },
+      {
+        title: "Obrandowanie ",
+        textList: [
+          "Zapewniamy koszulki, koszule, kamizelki, kurtki z logo i wizualizacją OneSerwis, zależnie od pakietu dołączenia do OneSerwis",
+        ],
+        img: "branding",
+        reverse: "reverse",
       },
     ],
   },

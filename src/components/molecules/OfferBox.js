@@ -6,14 +6,15 @@ import Button from "../atoms/Button";
 import { useHistory } from "react-router-dom";
 
 const StyledWrapper = styled.div`
-  margin: 0 10rem 4rem;
+  margin: 0 8rem 4rem;
   position: relative;
   display: flex;
+  justify-content: space-between;
   min-height: 50vh;
 `;
 
 const StyledTextWrapper = styled.div`
-  flex-basis: 50%;
+  flex-basis: 49%;
   padding: 2rem;
   padding-left: ${({ reverse }) => (reverse ? "3rem" : "2rem")};
   padding-right: ${({ reverse }) => (reverse ? "2rem" : "3rem")};
@@ -25,7 +26,7 @@ const StyledTextWrapper = styled.div`
 `;
 
 const StyledImgWrapper = styled.div`
-  flex-basis: 50%;
+  flex-basis: 49%;
   background-image: url(${({ img }) => img});
   background-size: cover;
   background-position: center;

@@ -5,11 +5,15 @@ import DetailsBox from "../molecules/DetailsBox";
 import { pages } from "../../const/pages";
 import legalProtection from "../../assets/images/legalProtection.jpg";
 import assistant from "../../assets/images/assistant.jpg";
-import program from "../../assets/images/program.jpg";
+import program from "../../assets/images/program.png";
 import trainings from "../../assets/images/trainings.jpg";
+import media from "../../assets/images/media.jpg";
+import google from "../../assets/images/google.jpg";
+import wwwDetails from "../../assets/images/wwwDetails.jpg";
+import branding from "../../assets/images/branding.jpg";
 
 const StyledWrapper = styled.div`
-  margin: 0 10rem 3rem;
+  margin: 0 8rem 3rem;
 `;
 
 const OfferDetailsWrapper = ({ name }) => (
@@ -31,6 +35,18 @@ const OfferDetailsWrapper = ({ name }) => (
             break;
           case "program":
             image = program;
+            break;
+          case "media":
+            image = media;
+            break;
+          case "wwwDetails":
+            image = wwwDetails;
+            break;
+          case "google":
+            image = google;
+            break;
+          case "branding":
+            image = branding;
             break;
           default:
             break;

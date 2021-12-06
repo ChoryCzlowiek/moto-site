@@ -4,7 +4,7 @@ const ListItem = styled.li`
   font-family: ${({ theme, bold }) =>
     bold ? theme.textBoldFont : theme.textFont};
   color: ${({ theme }) => theme.black};
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin: 1rem 0;
 `;
 

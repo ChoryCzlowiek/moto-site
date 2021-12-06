@@ -1,7 +1,7 @@
 import React from "react";
 import OfferBox from "../molecules/OfferBox";
 import SectionWithTitle from "../molecules/SectionWithTitle";
-import program from "../../assets/images/program.jpg";
+import program from "../../assets/images/program.png";
 import expert from "../../assets/images/radca.jpg";
 import advertisement from "../../assets/images/www.jpg";
 import { pages } from "../../const/pages";

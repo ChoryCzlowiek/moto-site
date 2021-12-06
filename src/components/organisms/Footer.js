@@ -5,15 +5,18 @@ import ContactData from "../molecules/ContactData";
 import Nav from "../molecules/Nav";
 import footer from "../../assets/images/footer.jpg";
 import { useHistory } from "react-router";
+import Title from "../atoms/Title";
+import youtube from "../../assets/images/youtube.png";
+import facebook from "../../assets/images/facebook.png";
+import { Link } from "react-router-dom";
 
 const StyledWrapper = styled.div`
-  padding: 3rem 0;
+  padding: 1.5rem 5rem;
   background-image: url(${footer});
   background-size: cover;
   background-position: 50% 90%;
   display: flex;
   justify-content: space-evenly;
-  align-items: baseline;
   position: relative;
 
   &:after {
@@ -30,10 +33,33 @@ const StyledWrapper = styled.div`
 const StyledNavWrapper = styled.div`
   flex-basis: 50%;
   z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 `;
 
 const StyledNav = styled(Nav)`
   margin: 2rem 0 0;
+`;
+
+const StyledContactWrapper = styled.div`
+  flex-basis: 50%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+`;
+
+const StyledIconsBox = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+const StyledIcon = styled.img`
+  margin: 1rem 0;
+  height: 2.5rem;
+  width: 2.5em;
+  cursor: pointer;
 `;
 
 const BreakLine = styled.div`
@@ -59,7 +85,17 @@ const Footer = () => {
         <Logo onClick={redirectToHome} />
         <StyledNav vertical />
       </StyledNavWrapper>
-      <ContactData footer />
+      <StyledContactWrapper>
+        <StyledIconsBox>
+          <a href="https://www.youtube.com/channel/UCEaP2hfwDAzGSS9vON4h3og">
+            <StyledIcon src={youtube} />
+          </a>
+          <a href="https://www.facebook.com/OneSerwis-102882895544229">
+            <StyledIcon src={facebook} />
+          </a>
+        </StyledIconsBox>
+        <ContactData footer />
+      </StyledContactWrapper>
       <BreakLine />
     </StyledWrapper>
   );

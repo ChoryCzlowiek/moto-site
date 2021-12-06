@@ -33,6 +33,7 @@ const StyledInput = styled(Input)`
   min-height: 20vh;
   color: ${({ theme }) => theme.black};
   background-color: ${({ theme }) => theme.white};
+  margin: 0.5rem 0;
 
   &::placeholder {
     color: ${({ theme }) => theme.black};
@@ -45,11 +46,11 @@ const ContactForm = () => (
     <StyledSubtitle small orange>
       Napisz do nas
     </StyledSubtitle>
-    <Input placeholder="Imie" required />
-    <Input placeholder="Nazwisko" required />
+    <Input placeholder="Nazwa Firmy" required />
+    <Input placeholder="Imię i Nazwisko" required />
     <Input placeholder="E-mail" required />
     <Input placeholder="Numer Telefonu" required />
-    <StyledInput as="textarea" placeholder="Napisz wiadomosc" required />
+    <StyledInput as="textarea" placeholder="Napisz wiadomość" required />
     <StyledButton>Wyslij</StyledButton>
   </StyledForm>
 );

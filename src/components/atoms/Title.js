@@ -5,6 +5,7 @@ const Title = styled.h1`
   letter-spacing: 3px;
   font-size: ${({ small }) => (small ? "1.5rem" : "2.5rem")};
   color: ${({ theme, orange }) => (orange ? theme.orange : theme.black)};
+  z-index: 2;
 `;
 
 export default Title;
