@@ -15,6 +15,7 @@ const StyledNumber = styled(Title)`
 
 const StyledTitle = styled(Title)`
   margin: 0 0 2rem;
+  font-size: 22px;
 `;
 
 const StyledTextWrapper = styled.div`

@@ -13,6 +13,9 @@ const StyledUlWrapper = styled.ul`
   padding: ${({ home }) => (home ? "0 15%" : "0")};
   /* transform: translateY(${({ home }) => (home ? "-50%" : 0)}); */
   margin: ${({ vertical }) => (vertical ? ".5rem 0 0" : "0")};
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const StyledNavItem = styled(NavItem)`

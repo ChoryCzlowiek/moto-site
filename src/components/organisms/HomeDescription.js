@@ -31,6 +31,11 @@ const StyledTitlesWrapper = styled.div`
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
   }
+
+  @media (max-width: 768px) {
+    margin: 0;
+    padding: 0;
+  }
 `;
 
 const StyledTitle = styled(Title)`

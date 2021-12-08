@@ -9,11 +9,17 @@ const StyledWrapper = styled.div`
   display: flex;
   margin: 3rem 0;
   min-height: 70vh;
+  @media (max-width: 768px) {
+    flex-flow: column nowrap;
+  }
 `;
 
 const StyledTextWrapper = styled.div`
   flex-basis: 40%;
   padding: 3rem;
+  @media (max-width: 768px) {
+    order: 2;
+  }
 `;
 
 const StyledImgWrapper = styled.div`
@@ -22,6 +28,13 @@ const StyledImgWrapper = styled.div`
   background-size: cover;
   background-position: center;
   clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+  @media (max-width: 768px) {
+    flex-grow: unset;
+    clip-path: unset;
+    width: 100%;
+    height: 300px;
+    order: 1;
+  }
 `;
 
 const StyledTitle = styled(Title)`
@@ -32,7 +45,7 @@ const AboutUsWrapper = () => (
   <SectionWithTitle title="Poznajmy się lepiej">
     <StyledWrapper>
       <StyledTextWrapper>
-        <StyledTitle orange>Kim jestesmy?</StyledTitle>
+        <StyledTitle orange>Kim jesteśmy?</StyledTitle>
         <Paragraph big>
           OneSerwis to ugruntowana pozycja na rynku motoryzacjnym, która otwiera
           nowy etap w swojej działalności. To sieć warsztatów, która daje

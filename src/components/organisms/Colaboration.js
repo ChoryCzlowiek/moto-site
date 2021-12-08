@@ -15,6 +15,14 @@ const StyledWrapper = styled.div`
   position: relative;
   margin: ${({ home }) => (home ? "0" : "0 0 15vw")};
 
+  @media (max-width: 768px) {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: 0;
+  }
+
   &:after {
     content: "";
     position: absolute;
@@ -40,6 +48,16 @@ const StyledTextWrapper = styled.div`
   padding: 3rem;
   z-index: 2;
 
+  @media (max-width: 768px) {
+    transform: unset;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: unset;
+    left: unset;
+    right: unset;
+  }
+
   ${({ home }) =>
     home &&
     css`
@@ -47,11 +65,22 @@ const StyledTextWrapper = styled.div`
       top: 40%;
       left: 5vw;
       width: 50vw;
+      @media (max-width: 768px) {
+        width: 100%;
+        height: 100%;
+        left: unset;
+        top: unset;
+        position: relative;
+      }
     `}
 `;
 
 const StyledTitle = styled(Title)`
   margin: 0 0 2rem;
+  @media (max-width: 768px) {
+    text-align: center;
+    font-size: 32px;
+  }
 `;
 
 const StyledButton = styled(Button)`

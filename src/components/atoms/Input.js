@@ -10,6 +10,10 @@ const Input = styled.input`
   font-family: ${({ theme }) => theme.titleFont};
   transition: 0.5s;
 
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+
   &::placeholder {
     color: ${({ theme }) => theme.black};
     font-family: ${({ theme }) => theme.titleFont};

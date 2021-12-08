@@ -19,6 +19,10 @@ const StyledWrapper = styled.div`
   justify-content: space-evenly;
   position: relative;
 
+  @media (max-width: 768px) {
+    flex-flow: column nowrap;
+  }
+
   &:after {
     content: "";
     position: absolute;
@@ -36,6 +40,13 @@ const StyledNavWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 `;
 
 const StyledNav = styled(Nav)`
@@ -48,11 +59,20 @@ const StyledContactWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  @media (max-width: 768px) {
+    flex-flow: column nowrap;
+    gap: 15px;
+  }
 `;
 
 const StyledIconsBox = styled.div`
   display: flex;
   flex-direction: column;
+  @media (max-width: 768px) {
+    flex-flow: row nowrap;
+    gap: 15px;
+    padding-top: 2rem;
+  }
 `;
 
 const StyledIcon = styled.img`
@@ -70,6 +90,9 @@ const BreakLine = styled.div`
   height: 80%;
   background-color: ${({ theme }) => theme.orange};
   z-index: 2;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const Footer = () => {

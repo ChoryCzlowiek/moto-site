@@ -12,6 +12,10 @@ const StyledWrapper = styled.div`
   padding: 1rem 10rem;
   border-bottom: ${({ theme, home }) =>
     home ? "none" : `3px solid ${theme.black}`};
+  @media (max-width: 768px) {
+    padding: 1rem;
+    justify-content: center;
+  }
 `;
 
 const Navbar = ({ home }) => {

@@ -4,6 +4,12 @@ import Paragraph from "../atoms/Paragraph";
 
 const StyledTextWrapper = styled.div`
   z-index: 2;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    order: 2;
+  }
 `;
 
 const StyledParagraph = styled(Paragraph)`

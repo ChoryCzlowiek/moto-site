@@ -19,6 +19,10 @@ const StyledBenefitsWrapper = styled.div`
     "fourth third"
     "fourth .";
   gap: 5rem 2rem;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-flow: column nowrap;
+  }
 `;
 
 const StyledClipImg = styled.div`

@@ -13,10 +13,16 @@ const StyledForm = styled.form`
   border-radius: 2rem;
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.3);
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
 `;
 
 const StyledTitle = styled(Title)`
   margin: 0 0 2rem;
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 `;
 
 const StyledSubtitle = styled(Title)`
@@ -27,6 +33,9 @@ const StyledSubtitle = styled(Title)`
 const StyledButton = styled(Button)`
   width: 20%;
   margin: 2rem 0 0;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const StyledInput = styled(Input)`

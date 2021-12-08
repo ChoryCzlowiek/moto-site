@@ -15,6 +15,11 @@ const StyledWrapper = styled.div`
   align-items: center;
   padding: 3rem 0;
 
+  @media (max-width: 768px) {
+    flex-flow: column nowrap;
+    gap: 15px;
+  }
+
   &:after {
     content: "";
     position: absolute;
@@ -27,7 +32,7 @@ const StyledWrapper = styled.div`
 `;
 
 const StyledContactData = styled(ContactData)`
-  padding: 3rem 0; ;
+  padding: 3rem 0;
 `;
 const ContactWrapper = () => (
   <StyledWrapper>

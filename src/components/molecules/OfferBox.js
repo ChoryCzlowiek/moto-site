@@ -11,6 +11,10 @@ const StyledWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   min-height: 50vh;
+  @media (max-width: 768px) {
+    flex-flow: column nowrap;
+    margin: 0;
+  }
 `;
 
 const StyledTextWrapper = styled.div`
@@ -23,6 +27,12 @@ const StyledTextWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   z-index: 10;
+  @media (max-width: 768px) {
+    border: unset;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    order: 2;
+  }
 `;
 
 const StyledImgWrapper = styled.div`
@@ -30,6 +40,13 @@ const StyledImgWrapper = styled.div`
   background-image: url(${({ img }) => img});
   background-size: cover;
   background-position: center;
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 300px;
+    flex-basis: unset;
+    margin-top: 2rem;
+    order: 1;
+  }
 `;
 
 const StyledTitle = styled(Title)`
