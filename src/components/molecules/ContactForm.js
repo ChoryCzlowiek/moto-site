@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import { send } from 'emailjs-com';
 import Yup from "yup";
 import Button from "../atoms/Button";
 import Input from "../atoms/Input";
@@ -69,28 +70,56 @@ const FormGroup = styled('div')`
   }
 `;
 
-const ContactForm = () => (
-  <StyledForm>
-    <StyledTitle orange>Skontaktuj sie z nami</StyledTitle>
-    <StyledSubtitle small orange>
-      Napisz do nas
-    </StyledSubtitle>
-    <Input placeholder="Nazwa Firmy" required />
-    <Input placeholder="Imię i Nazwisko" required />
-    <Input placeholder="E-mail" required />
-    <Input placeholder="Numer Telefonu" required />
-    <StyledInput as="textarea" placeholder="Napisz wiadomość" required />
-    <FormGroup>
-      <Input type="checkbox" id="rodo" required />
-      <StyledLabel for="rodo">
-        Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z ustawą o ochronie danych
-        osobowych w celu (np. wysyłania infomacji handlowej). Podanie danych osobowych jest dobrowolne.
-        Zostałem poinformowany, że przysługuje mi prawo dostępu do swoich danych, możliwości ich
-        poprawiania, żądania zaprzestania ich przetwarzania. Administratorem danych jest OneSerwis.
-      </StyledLabel>
-    </FormGroup>
-    <StyledButton>Wyślij</StyledButton>
-  </StyledForm>
-);
+export default function ContactForm() {
+  const [toSend, setToSend] = useState({
+    v_company: '',
+    v_name_surname: '',
+    v_email: '',
+    v_phone: '',
+    v_message: '',
+    v_rodo: ''
+  });
+  const onSubmit = (e) => {
+    e.preventDefault();
+    send(
+      'service_cte0f2g',
+      'template_5iszxum',
+      toSend,
+      'user_0OKiWcMbL60qk13kLAzdz'
+    )
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+      })
+      .catch((err) => {
+        console.log('FAILED...', err);
+      });
+  };
+  const handleChange = (e) => {
+    setToSend({ ...toSend, [e.target.name]: e.target.value });
+    console.log(toSend);
+  };
 
-export default ContactForm;
+  return (
+    <StyledForm>
+      <StyledTitle orange>Skontaktuj sie z nami</StyledTitle>
+      <StyledSubtitle small orange>
+        Napisz do nas
+      </StyledSubtitle>
+      <Input name="v_company" value={toSend.v_company} onChange={handleChange} placeholder="Nazwa Firmy" required />
+      <Input name="v_name_surname" value={toSend.v_name_surname} onChange={handleChange} placeholder="Imię i Nazwisko" required />
+      <Input name="v_email" value={toSend.v_email} onChange={handleChange} placeholder="E-mail" required />
+      <Input name="v_phone" value={toSend.v_phone} onChange={handleChange} placeholder="Numer Telefonu" required />
+      <StyledInput name="v_message" value={toSend.v_message} onChange={handleChange} as="textarea" placeholder="Napisz wiadomość" required />
+      <FormGroup>
+        <Input name="v_rodo" value={toSend.v_rodo} onChange={handleChange} type="checkbox" id="rodo" required />
+        <StyledLabel for="rodo">
+          Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z ustawą o ochronie danych
+          osobowych w celu (np. wysyłania infomacji handlowej). Podanie danych osobowych jest dobrowolne.
+          Zostałem poinformowany, że przysługuje mi prawo dostępu do swoich danych, możliwości ich
+          poprawiania, żądania zaprzestania ich przetwarzania. Administratorem danych jest OneSerwis.
+        </StyledLabel>
+      </FormGroup>
+      <StyledButton onClick={onSubmit}>Wyślij</StyledButton>
+    </StyledForm>
+  );
+}

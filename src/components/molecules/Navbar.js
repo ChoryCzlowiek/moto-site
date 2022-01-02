@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { useHistory } from "react-router";
 import styled from "styled-components";
 import Popup from 'reactjs-popup';
-import 'reactjs-popup/dist/index.css';
 import Nav from "./Nav";
 import Logo from "../atoms/Logo";
 import BurgerIcon from "../atoms/BurgerIcon";
 import Menu from "../atoms/Menu";
+import 'reactjs-popup/dist/index.css';
 
 const StyledWrapper = styled.div`
   display: flex;
