@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Yup from "yup";
 import Button from "../atoms/Button";
 import Input from "../atoms/Input";
 import Title from "../atoms/Title";
@@ -49,6 +50,25 @@ const StyledInput = styled(Input)`
   }
 `;
 
+const StyledLabel = styled('label')`
+  color: white;
+  width: 90%;
+  font-size: 12px;
+  line-height: 18px;
+`;
+
+const FormGroup = styled('div')`
+  display: flex;
+  flex-flow: row wrap;
+  align-items: start;
+  gap: 10px;
+  max-width: 350px;
+  & > input {
+    max-width: 15px;
+  }
+  }
+`;
+
 const ContactForm = () => (
   <StyledForm>
     <StyledTitle orange>Skontaktuj sie z nami</StyledTitle>
@@ -60,7 +80,16 @@ const ContactForm = () => (
     <Input placeholder="E-mail" required />
     <Input placeholder="Numer Telefonu" required />
     <StyledInput as="textarea" placeholder="Napisz wiadomość" required />
-    <StyledButton>Wyslij</StyledButton>
+    <FormGroup>
+      <Input type="checkbox" id="rodo" required />
+      <StyledLabel for="rodo">
+        Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z ustawą o ochronie danych
+        osobowych w celu (np. wysyłania infomacji handlowej). Podanie danych osobowych jest dobrowolne.
+        Zostałem poinformowany, że przysługuje mi prawo dostępu do swoich danych, możliwości ich
+        poprawiania, żądania zaprzestania ich przetwarzania. Administratorem danych jest OneSerwis.
+      </StyledLabel>
+    </FormGroup>
+    <StyledButton>Wyślij</StyledButton>
   </StyledForm>
 );
 
