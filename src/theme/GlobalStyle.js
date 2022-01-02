@@ -101,6 +101,12 @@ body{
   margin-top: 64px;
 }
 
+@media (min-width: 768px) {
+  .burger-menu {
+    display: none;
+  }
+}
+
 `;
 
 export default GlobalStyle;
