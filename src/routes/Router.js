@@ -8,6 +8,7 @@ import Benefits from "../views/Benefits";
 import Offer from "../views/Offer";
 import OfferDetails from "../views/OfferDetails";
 import ScrollToTop from "./ScrollToTop";
+import CookiesBanner from "../components/molecules/Cookies";
 
 export const Router = () => (
   <>
@@ -20,5 +21,6 @@ export const Router = () => (
       <Route path={pages.kontakt.path} component={Contact} />
       <Route path={pages.ofertaDetale.path} component={OfferDetails} />
     </Switch>
+    <CookiesBanner />
   </>
 );
