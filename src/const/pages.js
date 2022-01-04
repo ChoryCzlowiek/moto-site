@@ -20,7 +20,7 @@ export const pages = {
       },
       {
         title:
-          "OneSerwis współpracuje z ADAC i EIEA, a co dokładnie otrzymuje warsztat przy dołączeniu do OneSerwis?",
+          "OneSerwis współpracuje z ADAC, a co dokładnie otrzymuje warsztat przy dołączeniu do OneSerwis?",
         text: "Dołączenie do OneSerwis wiąże się z wieloma korzyściami dla warsztatu, o które cieżko w całej Polsce. To kompleksowa obsługa warsztatu oraz pomoc w budowaniu pozycji na rynku. Rzeczoznawca, radca prawny i ubezpieczenie. Usługa expert na etacie. Usługa odszkodowań zawiera szereg pakietów mających na celu zredukowanie kosztów w procesie prowadzenia warsztatu.",
         gridArea: "second",
       },
@@ -83,7 +83,7 @@ export const pages = {
           "Nadzór na prowadzeniem prac warsztatowych",
           "Pomoc przy zakupie pojazdu ( badanie technicze weryfikacja pojazdu w międzynarodowych bazach danych )",
           "Opinie technczne przez biegłego rzezcoznawcę",
-          "Reprezentowanie przed Administarcją Państwową",
+          "Reprezentowanie przed AdministADACją Państwową",
           "Mediacje w sporach",
           "Kalkulacje napraw na zlecenie klienta w systemach komputerowych ( AUDATEX, EUROTAX, DAT )",
           "Wykonanie wyceny pojazdu na zlecenie klienta w systemach ( INFO-EXPERT, EUROTAX )",

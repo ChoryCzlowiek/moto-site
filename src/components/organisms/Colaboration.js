@@ -13,7 +13,7 @@ const StyledWrapper = styled.div`
   background-size: cover;
   background-position: center;
   position: relative;
-  margin: ${({ home }) => (home ? "0" : "0 0 15vw")};
+  margin: ${({ home }) => (home ? "0" : "0")};
 
   @media (max-width: 768px) {
     width: 100%;
@@ -40,7 +40,8 @@ const StyledTextWrapper = styled.div`
   left: ${({ right }) => (right ? "55vw" : "15vw")};
   transform: translateY(-50%);
   width: 30vw;
-  height: 30vw;
+  height: auto;
+  min-height: 30vw;
   background-color: ${({ theme }) => theme.blackOpc};
   display: flex;
   flex-direction: column;
@@ -102,11 +103,11 @@ const Colaboration = ({ home, img }) => {
             <StyledTextWrapper home>
               <StyledTitle orange>Zapraszmy do współpracy</StyledTitle>
               <Paragraph white>
-                Dołączenie do sieci OneSerwis wiąże się także z nieodłączną,
-                profesjonalną pomocą w prowadzeniu warsztatu z naszej strony.
-                Chcemy, aby każdy warsztat wywodzący się spod szyldu OneSerwis
-                miał zapewnione profesjonalne wsparcie w każdej sferze
-                prowadzenia działalności. ……i dołącz do OneSerwis.
+                Dołączenie do sieci OneSerwis wiąże się także z nieodłączną, profesjonalną pomocą
+                w prowadzeniu warsztaty z naszej strony. Chcemy, aby każdy warsztat będący w OneSerwis
+                miał zapewnione profesjonalne wspADACie w każdej sferze prowadzenia działalności.
+                Wszystkie korzyści oraz opcje finansowe dołączenia do OneSerwis znajdziecie pod tym
+                linkiem. Wybierz swój pakiet już dziś i dołącz do OneSerwis.
               </Paragraph>
               <StyledButton onClick={redirectToContact}>
                 Napisz do nas

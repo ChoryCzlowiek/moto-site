@@ -6,7 +6,7 @@ const NavItem = styled.li`
   color: ${({ theme, black }) => (black ? theme.black : theme.orange)};
   cursor: pointer;
   margin: 0 1rem;
-  font-size: ${({ title }) => (title ? "2.3rem" : "1.3rem")};
+  font-size: ${({ title }) => (title ? "2.8rem" : "1.3rem")};
 
   &:hover {
     color: ${({ theme, black }) => (black ? theme.orange : theme.black)};

@@ -22,6 +22,7 @@ const StyledImgWrapper = styled.div`
   background-image: url(${({ img }) => img});
   background-size: cover;
   background-position: center;
+  z-index: 1;
 `;
 
 const Slider = ({ location }) => (
@@ -29,7 +30,7 @@ const Slider = ({ location }) => (
     <StyledImgWrapper img={slider}></StyledImgWrapper>
     <Navbar home />
     <LayerStyledImgWrapper
-      header="Sieć kompleksowych warsztatów samochodowych"
+      header="Dołącz do programu&nbsp;partneskiego i&nbsp;pracuj z&nbsp;najlepszymi"
       brands="Partnerzy"
       logo1={logo1}
       logo2={logo2}

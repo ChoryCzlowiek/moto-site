@@ -101,7 +101,7 @@ export default function ContactForm() {
 
   return (
     <StyledForm>
-      <StyledTitle orange>Skontaktuj sie z nami</StyledTitle>
+      <StyledTitle orange>Skontaktuj się z nami</StyledTitle>
       <StyledSubtitle small orange>
         Napisz do nas
       </StyledSubtitle>

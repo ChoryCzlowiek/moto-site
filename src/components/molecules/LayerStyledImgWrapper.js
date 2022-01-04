@@ -21,11 +21,15 @@ const BlockLayer = styled.div`
 const WhiteApla = styled.div`
     background: rgba(255, 255, 255, 0.4);
     color: #001b49;
-    font-size: 32px;
+    font-size: 60px;
+    @media (max-width: 768px) {
+        font-size: 32px;
+    }
     font-weight: 700;
-    max-width: 500px;
+    max-width: 700px;
     padding: 15px 30px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+    margin-left: 15px;
 `;
 
 const Brands = styled.div`
@@ -34,6 +38,7 @@ const Brands = styled.div`
 
 const BrandsHeader = styled.h2`
     color: #001b49;
+    font-family: "Exo";
 `;
 
 const BrandsContainer = styled.div`
@@ -64,7 +69,9 @@ export default function LayerStyledImgWrapper(props) {
                         </BrandsHeader>
                         <BrandsContainer>
                             <BrandLogo img={props.logo1} />
-                            <BrandLogo img={props.logo2} />
+                            <BrandLogo style={{ fontSize: 48, color: 'white' }}>
+                                ADAC Logo
+                            </BrandLogo>
                         </BrandsContainer>
                     </Brands>
                 </BlockLayer>
