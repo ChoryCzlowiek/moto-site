@@ -10,6 +10,7 @@ import featuresPhoto3 from "../assets/images/AdobeStock_161167457.jpeg";
 import HomeDescription from "../components/organisms/HomeDescription";
 import FeaturesBlock from "../components/organisms/FeaturesBlock";
 import icon from "../assets/images/3659904.png";
+import JoinUsBlock from "../components/organisms/JoinUsBlock";
 
 const HomeTemplate = () => (
   <>
@@ -56,6 +57,27 @@ const HomeTemplate = () => (
       content4Content="Szkolenia stacjonarne organizowane przez ADAC Europe, online organizowane przez ADAC Europe, zniżki na szkolenia oragnizowane przez ADAC."
     />
     {/* <HomeDescription /> */}
+    <JoinUsBlock
+      slide1
+      header="Partner ADAC i ARC"
+      content="Dołączenie do OneSerwis wiąże się także z nieodłączną profesjonalną pomocą w prowadzeniu warsztatu z naszej strony. Chcemy, aby każdy warsztat 
+      wywodzący się spod szyldu OneSerwis miał zapewnione profesjonalne wsparcie w każdej sferze prowadzenia serwisu."
+      photo={featuresPhoto2}
+    />
+    <JoinUsBlock
+      slide2
+      header="Partner ADAC i ARC"
+      content="Dołączenie do OneSerwis wiąże się także z nieodłączną profesjonalną pomocą w prowadzeniu warsztatu z naszej strony. Chcemy, aby każdy warsztat 
+      wywodzący się spod szyldu OneSerwis miał zapewnione profesjonalne wsparcie w każdej sferze prowadzenia serwisu."
+      photo={featuresPhoto2}
+    />
+    <JoinUsBlock
+      slide3
+      header="Partner ADAC i ARC"
+      content="Dołączenie do OneSerwis wiąże się także z nieodłączną profesjonalną pomocą w prowadzeniu warsztatu z naszej strony. Chcemy, aby każdy warsztat 
+      wywodzący się spod szyldu OneSerwis miał zapewnione profesjonalne wsparcie w każdej sferze prowadzenia serwisu."
+      photo={featuresPhoto2}
+    />
     <Colaboration home img={homeColab} />
     <Footer />
   </>

@@ -10,10 +10,8 @@ export default function FeaturesBlock(props) {
             flex-flow: column nowrap;
         }
         @media (min-width: 768px) {
-            margin-top: -2rem;
             position: relative;
             z-index: 9999;
-            padding-bottom: 2rem;
         }
     `;
 
@@ -135,12 +133,12 @@ export default function FeaturesBlock(props) {
             {props.position.includes("right") &&
                 (
                     <FeaturesBlockWrapper>
-                        <ContentBlock style={{ marginBottom: '-2rem'}}>
+                        <ContentBlock>
                             <ContentHeader>{props.header}</ContentHeader>
                             <ContentAbout>{props.about}</ContentAbout>
                             {/* <ContentButton href={props.link}>{props.button}</ContentButton> */}
                         </ContentBlock>
-                        <PhotoBlock src={props.image} alt={props.title} style={{ marginBottom: '-2rem'}} />
+                        <PhotoBlock src={props.image} alt={props.title} />
                     </FeaturesBlockWrapper>
                 )
             }
