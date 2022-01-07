@@ -13,7 +13,9 @@ const StyledTextWrapper = styled.div`
 `;
 
 const StyledParagraph = styled(Paragraph)`
-  margin: 0.5rem 0;
+  margin: 0.35rem 0;
+  font-family: "Lato";
+  font-weight: 500;
 `;
 
 const StyledParagraphMargin = styled(Paragraph)`
@@ -24,30 +26,27 @@ const ContactData = ({ footer }) => {
   const contactData = footer
     ? [
         <StyledTextWrapper>
-          <Paragraph white big>
-            AP System Solution
-          </Paragraph>
-          <Paragraph white big>
+          <StyledParagraph white big>
+            AP System Solution Sp. z o.o.
+          </StyledParagraph>
+          <StyledParagraph white big>
             Olsztyn 10-686
-          </Paragraph>
-          <Paragraph white big>
+          </StyledParagraph>
+          <StyledParagraph white big>
             Ul. Burskiego 20/15
-          </Paragraph>
-          <Paragraph white big>
-            NIP 739 286 1745
-          </Paragraph>
-          <Paragraph white big>
-            Tel. 606 654 763
-          </Paragraph>
-          <Paragraph white big>
-            Tel. 606 195 089
-          </Paragraph>
+          </StyledParagraph>
+          <StyledParagraph white big>
+            NIP 739 396 1064
+          </StyledParagraph>
+          <StyledParagraph white big>
+            www.oneserwis.pl
+          </StyledParagraph>
         </StyledTextWrapper>,
       ]
     : [
         <StyledTextWrapper>
           <StyledParagraph white big>
-            AP System Solution
+            AP System Solution Sp. z o.o.
           </StyledParagraph>
           <StyledParagraph white big>
             Olsztyn 10-686
@@ -55,17 +54,11 @@ const ContactData = ({ footer }) => {
           <StyledParagraph white big>
             Ul. Burskiego 20/15
           </StyledParagraph>
-          <StyledParagraphMargin white big>
-            NIP 739 286 1745
-          </StyledParagraphMargin>
           <StyledParagraph white big>
-            Tel. 606 654 763
+            NIP 739 396 1064
           </StyledParagraph>
           <StyledParagraph white big>
-            Tel. 606 195 089
-          </StyledParagraph>
-          <StyledParagraph white big>
-            Email: kontakt@oneserwis.pl
+            www.oneserwis.pl
           </StyledParagraph>
         </StyledTextWrapper>,
       ];

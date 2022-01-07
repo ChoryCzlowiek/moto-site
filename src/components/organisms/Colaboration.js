@@ -105,7 +105,7 @@ const Colaboration = ({ home, img }) => {
               <Paragraph white>
                 Dołączenie do sieci OneSerwis wiąże się także z nieodłączną, profesjonalną pomocą
                 w prowadzeniu warsztaty z naszej strony. Chcemy, aby każdy warsztat będący w OneSerwis
-                miał zapewnione profesjonalne wspADACie w każdej sferze prowadzenia działalności.
+                miał zapewnione profesjonalne wsparcie w każdej sferze prowadzenia działalności.
                 Wszystkie korzyści oraz opcje finansowe dołączenia do OneSerwis znajdziecie pod tym
                 linkiem. Wybierz swój pakiet już dziś i dołącz do OneSerwis.
               </Paragraph>

@@ -16,6 +16,14 @@ const StyledUlWrapper = styled.ul`
   @media (max-width: 768px) {
     display: none;
   }
+  & > a {
+    color: ${({ vertical }) => (vertical ? "white" : "rgb(226,65,21)")};
+    font-family: ${({ vertical }) => (vertical ? "Lato": "Roboto" )};
+    transition: 0.5s;
+  }
+  & > a:hover {
+    color: ${({ vertical }) => (vertical ? "rgb(226,65,21)" : "white")};
+  }
 `;
 
 const StyledNavItem = styled(NavItem)`
@@ -44,7 +52,7 @@ const Nav = ({ home, vertical, onClick, isMenuVisible }) => {
     : [
         <StyledUlWrapper>
           <NavItem as={NavLink} to={pages.glowna.path}>
-            Strona Główna
+            Home
           </NavItem>
           <NavItem as={NavLink} to={pages.oNas.path}>
             O Nas
@@ -64,7 +72,7 @@ const Nav = ({ home, vertical, onClick, isMenuVisible }) => {
   const footerNav = [
     <StyledUlWrapper vertical>
       <StyledNavItem as={NavLink} to={pages.glowna.path}>
-        Strona Główna
+        Home
       </StyledNavItem>
       <StyledNavItem as={NavLink} to={pages.oNas.path}>
         O Nas

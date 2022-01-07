@@ -6,13 +6,14 @@ import Nav from "../molecules/Nav";
 import footer from "../../assets/images/footer.jpg";
 import { useHistory } from "react-router";
 import Title from "../atoms/Title";
-import youtube from "../../assets/images/youtube.png";
-import facebook from "../../assets/images/facebook.png";
+import youtube from "../../assets/images/logo_youtube.png";
+import facebook from "../../assets/images/logo_facebook.png";
 import { Link } from "react-router-dom";
 
 const StyledWrapper = styled.div`
   padding: 1.5rem 5rem;
-  background-image: url(${footer});
+  // background-image: url(${footer});
+  background-color: #13182c;
   background-size: cover;
   background-position: 50% 90%;
   display: flex;
@@ -30,7 +31,7 @@ const StyledWrapper = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
+    // background-color: #13182c;
   }
 `;
 
@@ -105,15 +106,15 @@ const Footer = () => {
   return (
     <StyledWrapper>
       <StyledNavWrapper>
-        <Logo onClick={redirectToHome} />
+        <Logo white onClick={redirectToHome} />
         <StyledNav vertical />
       </StyledNavWrapper>
       <StyledContactWrapper>
         <StyledIconsBox>
-          <a href="https://www.youtube.com/channel/UCEaP2hfwDAzGSS9vON4h3og">
+          <a href="https://www.youtube.com/channel/UCEaP2hfwDAzGSS9vON4h3og" target="_blank" rel="noopener noreferrer">
             <StyledIcon src={youtube} />
           </a>
-          <a href="https://www.facebook.com/OneSerwis-102882895544229">
+          <a href="https://www.facebook.com/OneSerwis-102882895544229" target="_blank" rel="noopener noreferrer">
             <StyledIcon src={facebook} />
           </a>
         </StyledIconsBox>

@@ -1,14 +1,15 @@
 import styled from "styled-components";
 import logo from "../../assets/images/logo.png";
+import whitelogo from "../../assets/images/logo_oneserwis_white.png";
 
 const StyledLogo = styled.img`
-  height: 3rem;
-  max-width: 15rem;
+  height: 4rem;
+  max-width: 18rem;
   cursor: pointer;
   object-fit: contain;
   position: relative;
 `;
 
-const Logo = ({ onClick }) => <StyledLogo onClick={onClick} src={logo} />;
+const Logo = ({ onClick, white }) => <>{white ? <StyledLogo onClick={onClick} src={whitelogo} /> : <StyledLogo onClick={onClick} src={logo} />}</>;
 
 export default Logo;
