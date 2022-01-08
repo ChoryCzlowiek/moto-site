@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/moto-site/static/js/main.e7630c64.chunk.js",
-    "main.js.map": "/moto-site/static/js/main.e7630c64.chunk.js.map",
+    "main.js": "/moto-site/static/js/main.66986d29.chunk.js",
+    "main.js.map": "/moto-site/static/js/main.66986d29.chunk.js.map",
     "runtime-main.js": "/moto-site/static/js/runtime-main.5da8492c.js",
     "runtime-main.js.map": "/moto-site/static/js/runtime-main.5da8492c.js.map",
     "static/css/2.450bcdb5.chunk.css": "/moto-site/static/css/2.450bcdb5.chunk.css",
@@ -34,6 +34,7 @@
     "static/media/footer.0bea6589.jpg": "/moto-site/static/media/footer.0bea6589.jpg",
     "static/media/google.805fc192.jpg": "/moto-site/static/media/google.805fc192.jpg",
     "static/media/homeColab.224e526b.jpg": "/moto-site/static/media/homeColab.224e526b.jpg",
+    "static/media/hp-simplified-265.5989b505.woff2": "/moto-site/static/media/hp-simplified-265.5989b505.woff2",
     "static/media/legalProtection.db8da415.jpg": "/moto-site/static/media/legalProtection.db8da415.jpg",
     "static/media/logo.7af21379.png": "/moto-site/static/media/logo.7af21379.png",
     "static/media/logo_oneserwis_white.e42aaeb0.png": "/moto-site/static/media/logo_oneserwis_white.e42aaeb0.png",
@@ -51,6 +52,6 @@
     "static/js/runtime-main.5da8492c.js",
     "static/css/2.450bcdb5.chunk.css",
     "static/js/2.90f08d4f.chunk.js",
-    "static/js/main.e7630c64.chunk.js"
+    "static/js/main.66986d29.chunk.js"
   ]
 }
