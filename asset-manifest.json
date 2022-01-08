@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/moto-site/static/js/main.bae6051e.chunk.js",
-    "main.js.map": "/moto-site/static/js/main.bae6051e.chunk.js.map",
+    "main.js": "/moto-site/static/js/main.e7630c64.chunk.js",
+    "main.js.map": "/moto-site/static/js/main.e7630c64.chunk.js.map",
     "runtime-main.js": "/moto-site/static/js/runtime-main.5da8492c.js",
     "runtime-main.js.map": "/moto-site/static/js/runtime-main.5da8492c.js.map",
     "static/css/2.450bcdb5.chunk.css": "/moto-site/static/css/2.450bcdb5.chunk.css",
@@ -13,13 +13,15 @@
     "static/media/3659904.8c601734.png": "/moto-site/static/media/3659904.8c601734.png",
     "static/media/ADAC-Logo.3a03214e.png": "/moto-site/static/media/ADAC-Logo.3a03214e.png",
     "static/media/AdobeStock_137114233.1a63c725.jpeg": "/moto-site/static/media/AdobeStock_137114233.1a63c725.jpeg",
-    "static/media/AdobeStock_161167457.c699628c.jpeg": "/moto-site/static/media/AdobeStock_161167457.c699628c.jpeg",
-    "static/media/AdobeStock_308327283.d0a49975.jpeg": "/moto-site/static/media/AdobeStock_308327283.d0a49975.jpeg",
+    "static/media/AdobeStock_161167457_resiaze.e44f5189.jpg": "/moto-site/static/media/AdobeStock_161167457_resiaze.e44f5189.jpg",
+    "static/media/AdobeStock_308327283_resize.2ba8d8db.jpg": "/moto-site/static/media/AdobeStock_308327283_resize.2ba8d8db.jpg",
     "static/media/AdobeStock_341430772.38895d7f.jpeg": "/moto-site/static/media/AdobeStock_341430772.38895d7f.jpeg",
     "static/media/AdobeStock_460799400.4dba376f.jpeg": "/moto-site/static/media/AdobeStock_460799400.4dba376f.jpeg",
+    "static/media/AdobeStock_460799400_resize.d912c48c.jpg": "/moto-site/static/media/AdobeStock_460799400_resize.d912c48c.jpg",
     "static/media/AdobeStock_69826947.6ead413b.jpeg": "/moto-site/static/media/AdobeStock_69826947.6ead413b.jpeg",
     "static/media/AdobeStock_83501289.5987cc1c.jpeg": "/moto-site/static/media/AdobeStock_83501289.5987cc1c.jpeg",
     "static/media/Depositphotos_139208182_xl-2015.0bea6589.jpg": "/moto-site/static/media/Depositphotos_139208182_xl-2015.0bea6589.jpg",
+    "static/media/IMG_8697-1_resize.86ff7371.png": "/moto-site/static/media/IMG_8697-1_resize.86ff7371.png",
     "static/media/Lato-Bold.5dd5aa02.ttf": "/moto-site/static/media/Lato-Bold.5dd5aa02.ttf",
     "static/media/RobotoCondensed-Bold.89a39652.ttf": "/moto-site/static/media/RobotoCondensed-Bold.89a39652.ttf",
     "static/media/RobotoCondensed-Regular.db6d9169.ttf": "/moto-site/static/media/RobotoCondensed-Regular.db6d9169.ttf",
@@ -39,6 +41,7 @@
     "static/media/onas.c2981bf0.jpg": "/moto-site/static/media/onas.c2981bf0.jpg",
     "static/media/program.feb8d52f.png": "/moto-site/static/media/program.feb8d52f.png",
     "static/media/radca.143841d6.jpg": "/moto-site/static/media/radca.143841d6.jpg",
+    "static/media/service-motor-vehicle-1280x720-1280x720.e79e573b.jpg": "/moto-site/static/media/service-motor-vehicle-1280x720-1280x720.e79e573b.jpg",
     "static/media/trainings.56cd5137.jpg": "/moto-site/static/media/trainings.56cd5137.jpg",
     "static/media/wspolpraca.cdde62f1.png": "/moto-site/static/media/wspolpraca.cdde62f1.png",
     "static/media/www.8bdffdde.jpg": "/moto-site/static/media/www.8bdffdde.jpg",
@@ -48,6 +51,6 @@
     "static/js/runtime-main.5da8492c.js",
     "static/css/2.450bcdb5.chunk.css",
     "static/js/2.90f08d4f.chunk.js",
-    "static/js/main.bae6051e.chunk.js"
+    "static/js/main.e7630c64.chunk.js"
   ]
 }
