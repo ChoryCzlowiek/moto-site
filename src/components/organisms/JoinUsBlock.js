@@ -68,7 +68,7 @@ const TextBlock = styled.div`
 `;
 
 const Header = styled.h2`
-    color: ${({ slide2 }) => (slide2 ? "inherit" : "white") };
+    color: white;
     @media (max-width: 768px) {
         color: inherit;
     }
@@ -77,7 +77,7 @@ const Header = styled.h2`
 `;
 
 const Content = styled.p`
-    color: ${({ slide2 }) => (slide2 ? "inherit" : "white") };
+    color: white;
     @media (max-width: 768px) {
         color: inherit;
     }
@@ -98,7 +98,6 @@ const ImageItem = styled.img`
     width: 100%;
     max-height: 400px;
     object-fit: cover;
-    box-shadow: ${({ slide2 }) => (slide2 ? "none" : "15px -15px 0px #fb2f2f") };
 `;
 
 export default function JoinUsBlock({ slide1, slide2, slide3, header, content, photo }) {
@@ -112,7 +111,10 @@ export default function JoinUsBlock({ slide1, slide2, slide3, header, content, p
                             <Content>{content}</Content>
                         </TextBlock>
                         <PhotoBlock>
-                            <ImageItem src={photo} alt={header} />
+                            <ImageItem
+                                src={photo}
+                                alt={header}
+                            />
                         </PhotoBlock>
                     </PartnerContainer>
                 </PartnerWrapper>
@@ -121,11 +123,15 @@ export default function JoinUsBlock({ slide1, slide2, slide3, header, content, p
                 <ServiceWrapper>
                     <PartnerContainer>
                         <TextBlock>
-                            <Header>{header}</Header>
-                            <Content>{content}</Content>
+                            <Header style={{ color: 'inherit' }}>{header}</Header>
+                            <Content style={{ color: 'inherit' }}>{content}</Content>
                         </TextBlock>
                         <PhotoBlock>
-                            <ImageItem src={photo} alt={header} />
+                            <ImageItem
+                                src={photo}
+                                alt={header}
+                                style={{ boxShadow: '15px -15px 0px #fb2f2f'}}
+                            />
                         </PhotoBlock>
                     </PartnerContainer>
                 </ServiceWrapper>
@@ -138,7 +144,10 @@ export default function JoinUsBlock({ slide1, slide2, slide3, header, content, p
                             <Content>{content}</Content>
                         </TextBlock>
                         <PhotoBlock>
-                            <ImageItem src={photo} alt={header} />
+                            <ImageItem
+                                src={photo}
+                                alt={header}
+                            />
                         </PhotoBlock>
                     </PartnerContainer>
                 </GradientWrapper>

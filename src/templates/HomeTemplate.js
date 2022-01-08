@@ -4,9 +4,12 @@ import Slider from "../components/organisms/Slider";
 import Footer from "../components/organisms/Footer";
 import Colaboration from "../components/organisms/Colaboration";
 import homeColab from "../assets/images/homeColab.jpg";
-import featuresPhoto1 from "../assets/images/AdobeStock_308327283.jpeg";
+import featuresPhoto1 from "../assets/images/AdobeStock_308327283_resize.jpg";
 import featuresPhoto2 from "../assets/images/AdobeStock_69826947.jpeg";
-import featuresPhoto3 from "../assets/images/AdobeStock_161167457.jpeg";
+import featuresPhoto3 from "../assets/images/AdobeStock_161167457_resiaze.jpg";
+import slidePhoto1 from "../assets/images/IMG_8697-1_resize.png";
+import slidePhoto2 from "../assets/images/service-motor-vehicle-1280x720-1280x720.jpg";
+import slidePhoto3 from "../assets/images/AdobeStock_460799400_resize.jpg";
 import HomeDescription from "../components/organisms/HomeDescription";
 import FeaturesBlock from "../components/organisms/FeaturesBlock";
 import icon from "../assets/images/3659904.png";
@@ -62,21 +65,20 @@ const HomeTemplate = () => (
       header="Partner ADAC i ARC"
       content="Dołączenie do OneSerwis wiąże się także z nieodłączną profesjonalną pomocą w prowadzeniu warsztatu z naszej strony. Chcemy, aby każdy warsztat 
       wywodzący się spod szyldu OneSerwis miał zapewnione profesjonalne wsparcie w każdej sferze prowadzenia serwisu."
-      photo={featuresPhoto2}
+      photo={slidePhoto1}
     />
     <JoinUsBlock
       slide2
-      header="Partner ADAC i ARC"
+      header="One Serwis"
       content="Dołączenie do OneSerwis wiąże się także z nieodłączną profesjonalną pomocą w prowadzeniu warsztatu z naszej strony. Chcemy, aby każdy warsztat 
       wywodzący się spod szyldu OneSerwis miał zapewnione profesjonalne wsparcie w każdej sferze prowadzenia serwisu."
-      photo={featuresPhoto2}
+      photo={slidePhoto2}
     />
     <JoinUsBlock
       slide3
-      header="Partner ADAC i ARC"
-      content="Dołączenie do OneSerwis wiąże się także z nieodłączną profesjonalną pomocą w prowadzeniu warsztatu z naszej strony. Chcemy, aby każdy warsztat 
-      wywodzący się spod szyldu OneSerwis miał zapewnione profesjonalne wsparcie w każdej sferze prowadzenia serwisu."
-      photo={featuresPhoto2}
+      header="Rzeczoznawca ADAC"
+      content="Partnerzy One Serwis otrzymują rzeczoznawcę certyfikowanego przez ADAC i ARC."
+      photo={slidePhoto3}
     />
     <Colaboration home img={homeColab} />
     <Footer />
