@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/moto-site/static/js/main.66986d29.chunk.js",
-    "main.js.map": "/moto-site/static/js/main.66986d29.chunk.js.map",
+    "main.js": "/moto-site/static/js/main.25775f42.chunk.js",
+    "main.js.map": "/moto-site/static/js/main.25775f42.chunk.js.map",
     "runtime-main.js": "/moto-site/static/js/runtime-main.5da8492c.js",
     "runtime-main.js.map": "/moto-site/static/js/runtime-main.5da8492c.js.map",
     "static/css/2.450bcdb5.chunk.css": "/moto-site/static/css/2.450bcdb5.chunk.css",
@@ -52,6 +52,6 @@
     "static/js/runtime-main.5da8492c.js",
     "static/css/2.450bcdb5.chunk.css",
     "static/js/2.90f08d4f.chunk.js",
-    "static/js/main.66986d29.chunk.js"
+    "static/js/main.25775f42.chunk.js"
   ]
 }
