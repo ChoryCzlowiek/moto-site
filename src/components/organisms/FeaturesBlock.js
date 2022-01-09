@@ -79,9 +79,9 @@ export default function FeaturesBlock(props) {
         padding: 50px 15px;
         position: relative;
         z-index: 10;
-        margin-top: -240px;
         background-color: rgba(19,24,44,.8);
         color: white;
+        margin-top: 3rem;
     `;
 
     const ContentGrid = styled.div`
@@ -146,7 +146,7 @@ export default function FeaturesBlock(props) {
                 (
                     <FeaturesBlockWrapper style={{ zIndex: 999 }}>
                         <CenteredBlock>
-                            <PhotoBackground src={props.image} alt={props.title} />
+                            {/* <PhotoBackground src={props.image} alt={props.title} /> */}
                             <ContentFullBlock>
                                 <ContentHeader style={{ color: 'white', marginBottom: 20 }}>{props.header}</ContentHeader>
                                 <ContentAbout style={{ color: 'white' }}>{props.about}</ContentAbout>

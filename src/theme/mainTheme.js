@@ -5,6 +5,6 @@ export const theme = {
   white: "rgb(255,255,255)",
   whiteOpc: "rgba(255,255,255, .6)",
   textBoldFont: "RobotoBold",
-  titleFont: "Lato",
+  titleFont: "HPSimplified",
   textFont: "Roboto",
 };

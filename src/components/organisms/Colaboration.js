@@ -8,12 +8,15 @@ import { useHistory } from "react-router-dom";
 import { pages } from "../../const/pages";
 
 const StyledWrapper = styled.div`
-  min-height: 100vh;
-  background-image: url(${({ img }) => img});
+  min-height: ${({ home }) => (home ? "100vh": "auto")};
+  background: url(${({ home, img }) => (home ? img : "")});
   background-size: cover;
   background-position: center;
   position: relative;
-  margin: ${({ home }) => (home ? "0" : "0")};
+  margin: ${({ home }) => (home ? "0" : "3rem 0")};
+  display: flex;
+  gap: 7vh;
+  justify-content: center;
 
   @media (max-width: 768px) {
     width: 100%;
@@ -30,15 +33,15 @@ const StyledWrapper = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: ${({ home }) => (home ? "rgba(0, 0, 0, 0.4)" : "")};
   }
 `;
 
 const StyledTextWrapper = styled.div`
-  position: absolute;
-  top: 90%;
-  left: ${({ right }) => (right ? "55vw" : "15vw")};
-  transform: translateY(-50%);
+  position: ${({ home }) => (home ? "absolute" : "unset")};
+  top: ${({ home }) => (home ? "90%" : "unset")};
+  left: ${({ right }) => (right ? "55vw" : "unset")};
+  transform: ${({ home }) => (home ? "translateY(0%)" : "unset")};
   width: 30vw;
   height: auto;
   min-height: 30vw;

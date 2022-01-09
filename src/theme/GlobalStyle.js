@@ -2,8 +2,11 @@ import { createGlobalStyle } from "styled-components";
 import Roboto from "../assets/fonts/RobotoCondensed-Regular.ttf";
 import RobotoBold from "../assets/fonts/RobotoCondensed-Bold.ttf";
 import Lato from "../assets/fonts/Lato-Bold.ttf";
+import HPSimplified from "../assets/fonts/hp-simplified-265.woff2";
 
 const GlobalStyle = createGlobalStyle`
+
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@200;300;400;500;600;700;800;900&display=swap');
 
 @font-face {
     font-family: 'Roboto';
@@ -18,6 +21,11 @@ const GlobalStyle = createGlobalStyle`
 @font-face {
     font-family: 'Lato';
     src: url(${Lato}) format('truetype');
+}
+
+@font-face {
+    font-family: 'HPSimplified';
+    src: url(${HPSimplified}) format('woff2');
 }
 
 *, *::before, *::after{
