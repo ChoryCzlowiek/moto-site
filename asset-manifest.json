@@ -1,24 +1,23 @@
 {
   "files": {
-    "main.js": "/moto-site/static/js/main.25775f42.chunk.js",
-    "main.js.map": "/moto-site/static/js/main.25775f42.chunk.js.map",
+    "main.js": "/moto-site/static/js/main.90be70b1.chunk.js",
+    "main.js.map": "/moto-site/static/js/main.90be70b1.chunk.js.map",
     "runtime-main.js": "/moto-site/static/js/runtime-main.5da8492c.js",
     "runtime-main.js.map": "/moto-site/static/js/runtime-main.5da8492c.js.map",
     "static/css/2.450bcdb5.chunk.css": "/moto-site/static/css/2.450bcdb5.chunk.css",
-    "static/js/2.90f08d4f.chunk.js": "/moto-site/static/js/2.90f08d4f.chunk.js",
-    "static/js/2.90f08d4f.chunk.js.map": "/moto-site/static/js/2.90f08d4f.chunk.js.map",
+    "static/js/2.cfa0b6c9.chunk.js": "/moto-site/static/js/2.cfa0b6c9.chunk.js",
+    "static/js/2.cfa0b6c9.chunk.js.map": "/moto-site/static/js/2.cfa0b6c9.chunk.js.map",
     "index.html": "/moto-site/index.html",
     "static/css/2.450bcdb5.chunk.css.map": "/moto-site/static/css/2.450bcdb5.chunk.css.map",
-    "static/js/2.90f08d4f.chunk.js.LICENSE.txt": "/moto-site/static/js/2.90f08d4f.chunk.js.LICENSE.txt",
+    "static/js/2.cfa0b6c9.chunk.js.LICENSE.txt": "/moto-site/static/js/2.cfa0b6c9.chunk.js.LICENSE.txt",
     "static/media/3659904.8c601734.png": "/moto-site/static/media/3659904.8c601734.png",
     "static/media/ADAC-Logo.3a03214e.png": "/moto-site/static/media/ADAC-Logo.3a03214e.png",
-    "static/media/AdobeStock_137114233.1a63c725.jpeg": "/moto-site/static/media/AdobeStock_137114233.1a63c725.jpeg",
     "static/media/AdobeStock_161167457_resiaze.e44f5189.jpg": "/moto-site/static/media/AdobeStock_161167457_resiaze.e44f5189.jpg",
     "static/media/AdobeStock_308327283_resize.2ba8d8db.jpg": "/moto-site/static/media/AdobeStock_308327283_resize.2ba8d8db.jpg",
     "static/media/AdobeStock_341430772.38895d7f.jpeg": "/moto-site/static/media/AdobeStock_341430772.38895d7f.jpeg",
-    "static/media/AdobeStock_460799400.4dba376f.jpeg": "/moto-site/static/media/AdobeStock_460799400.4dba376f.jpeg",
     "static/media/AdobeStock_460799400_resize.d912c48c.jpg": "/moto-site/static/media/AdobeStock_460799400_resize.d912c48c.jpg",
     "static/media/AdobeStock_69826947.6ead413b.jpeg": "/moto-site/static/media/AdobeStock_69826947.6ead413b.jpeg",
+    "static/media/AdobeStock_77452038_resiaze.866b3324.jpg": "/moto-site/static/media/AdobeStock_77452038_resiaze.866b3324.jpg",
     "static/media/AdobeStock_83501289.5987cc1c.jpeg": "/moto-site/static/media/AdobeStock_83501289.5987cc1c.jpeg",
     "static/media/Depositphotos_139208182_xl-2015.0bea6589.jpg": "/moto-site/static/media/Depositphotos_139208182_xl-2015.0bea6589.jpg",
     "static/media/IMG_8697-1_resize.86ff7371.png": "/moto-site/static/media/IMG_8697-1_resize.86ff7371.png",
@@ -51,7 +50,7 @@
   "entrypoints": [
     "static/js/runtime-main.5da8492c.js",
     "static/css/2.450bcdb5.chunk.css",
-    "static/js/2.90f08d4f.chunk.js",
-    "static/js/main.25775f42.chunk.js"
+    "static/js/2.cfa0b6c9.chunk.js",
+    "static/js/main.90be70b1.chunk.js"
   ]
 }
