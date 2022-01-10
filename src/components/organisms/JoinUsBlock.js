@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const JoinUsBlockWrapper = styled.section`
     width: 100%;
-    margin: 3rem 0;
+    margin-top: 1rem;
 `;
 
 const Wrapper = styled.div`

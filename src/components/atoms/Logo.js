@@ -4,7 +4,7 @@ import whitelogo from "../../assets/images/logo_oneserwis_white.png";
 
 const StyledLogo = styled.img`
   height: 4rem;
-  max-width: 18rem;
+  max-width: 22rem;
   cursor: pointer;
   object-fit: contain;
   position: relative;

@@ -70,7 +70,7 @@ export default function LayerStyledImgWrapper(props) {
                         <BrandsContainer>
                             <BrandLogo img={props.logo1} />
                             <BrandLogo style={{ fontSize: 48, color: 'white' }}>
-                                ADAC Logo
+                                {/* ADAC Logo */}
                             </BrandLogo>
                         </BrandsContainer>
                     </Brands>

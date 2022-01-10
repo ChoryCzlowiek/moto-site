@@ -17,12 +17,12 @@ const StyledUlWrapper = styled.ul`
     display: none;
   }
   & > a {
-    color: ${({ vertical }) => (vertical ? "white" : "rgb(226,65,21)")};
+    color: ${({ vertical }) => (vertical ? "white" : "rgb(19,24,44)")};
     font-family: ${({ vertical }) => (vertical ? "Lato": "Roboto" )};
     transition: 0.5s;
   }
   & > a:hover {
-    color: ${({ vertical }) => (vertical ? "rgb(226,65,21)" : "white")};
+    color: ${({ vertical }) => (vertical ? "rgb(226,65,21)" : "rgb(226,65,21)")};
   }
 `;
 

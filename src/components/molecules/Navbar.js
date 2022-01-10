@@ -12,9 +12,9 @@ const StyledWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   background-color: ${({ theme, home }) => (home ? "none" : theme.whiteOpc)};
-  position: absolute;
   width: 100%;
   z-index: 9999;
+  position: ${({ home }) => (home ? "absolute" : "relative")};
   padding: 1rem 10rem;
   border-bottom: ${({ theme, home }) =>
     home ? "none" : `3px solid ${theme.black}`};

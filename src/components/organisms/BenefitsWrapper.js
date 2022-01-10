@@ -6,9 +6,9 @@ import FeaturesBlock from "../organisms/FeaturesBlock";
 import { pages } from "../../const/pages";
 import clipImg from "../../assets/images/clipBoxImg.jpg";
 import clipImg2 from "../../assets/images/clipBoxImg2.jpeg";
-import featuresPhoto1 from "../../assets/images/AdobeStock_460799400.jpeg";
-import featuresPhoto2 from "../../assets/images/Depositphotos_139208182_xl-2015.jpg";
-import featuresPhoto3 from "../../assets/images/AdobeStock_137114233.jpeg";
+import featuresPhoto1 from "../../assets/images/AdobeStock_161167457_resiaze.jpg";
+import featuresPhoto2 from "../../assets/images/AdobeStock_77452038_resiaze.jpg";
+import featuresPhoto3 from "../../assets/images/Depositphotos_139208182_xl-2015.jpg";
 import featuresPhoto4 from "../../assets/images/AdobeStock_83501289.jpeg";
 
 const StyledBenefitsWrapper = styled.div`
@@ -64,7 +64,7 @@ const BenefitsWrapper = () => {
         />
         <SpacerPhoto />
         <FeaturesBlock
-          position="right"
+          position="left"
           image={featuresPhoto2}
           title={`Tekst alternatywny`}
           header="Warsztaty partnerskie"
@@ -83,7 +83,7 @@ const BenefitsWrapper = () => {
         />
         <SpacerPhoto />
         <FeaturesBlock
-          position="right"
+          position="left"
           image={featuresPhoto4}
           title={`Tekst alternatywny`}
           header="Warsztaty partnerskie"

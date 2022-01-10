@@ -38,9 +38,6 @@ const ContactData = ({ footer }) => {
           <StyledParagraph white big>
             NIP 739 396 1064
           </StyledParagraph>
-          <StyledParagraph white big>
-            www.oneserwis.pl
-          </StyledParagraph>
         </StyledTextWrapper>,
       ]
     : [
@@ -56,9 +53,6 @@ const ContactData = ({ footer }) => {
           </StyledParagraph>
           <StyledParagraph white big>
             NIP 739 396 1064
-          </StyledParagraph>
-          <StyledParagraph white big>
-            www.oneserwis.pl
           </StyledParagraph>
         </StyledTextWrapper>,
       ];

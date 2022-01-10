@@ -31,9 +31,9 @@ const Slider = ({ location }) => (
     <Navbar home />
     <LayerStyledImgWrapper
       header="Dołącz do programu&nbsp;partneskiego i&nbsp;pracuj z&nbsp;najlepszymi"
-      brands="Partnerzy"
-      logo1={logo1}
-      logo2={logo2}
+      // brands="Partnerzy"
+      // logo1={logo1}
+      // logo2={logo2}
     />
   </StyledWrapper>
 );

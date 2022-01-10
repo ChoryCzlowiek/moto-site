@@ -1,16 +1,14 @@
 import React from "react";
 import { pages } from "../const/pages";
+import styled from 'styled-components';
 import Slider from "../components/organisms/Slider";
 import Footer from "../components/organisms/Footer";
-import Colaboration from "../components/organisms/Colaboration";
-import homeColab from "../assets/images/homeColab.jpg";
 import featuresPhoto1 from "../assets/images/AdobeStock_308327283_resize.jpg";
 import featuresPhoto2 from "../assets/images/AdobeStock_69826947.jpeg";
 import featuresPhoto3 from "../assets/images/AdobeStock_161167457_resiaze.jpg";
 import slidePhoto1 from "../assets/images/IMG_8697-1_resize.png";
 import slidePhoto2 from "../assets/images/service-motor-vehicle-1280x720-1280x720.jpg";
 import slidePhoto3 from "../assets/images/AdobeStock_460799400_resize.jpg";
-import HomeDescription from "../components/organisms/HomeDescription";
 import FeaturesBlock from "../components/organisms/FeaturesBlock";
 import icon from "../assets/images/3659904.png";
 import JoinUsBlock from "../components/organisms/JoinUsBlock";
@@ -18,6 +16,7 @@ import JoinUsBlock from "../components/organisms/JoinUsBlock";
 const HomeTemplate = () => (
   <>
     <Slider location={pages.glowna.location} />
+    <Spacer />
     <FeaturesBlock
       position="left"
       image={featuresPhoto1}
@@ -62,7 +61,7 @@ const HomeTemplate = () => (
     {/* <HomeDescription /> */}
     <JoinUsBlock
       slide1
-      header="Partner ADAC i ARC"
+      header="Partner ADAC Polska i ARC"
       content="Dołączenie do OneSerwis wiąże się także z nieodłączną profesjonalną pomocą w prowadzeniu warsztatu z naszej strony. Chcemy, aby każdy warsztat 
       wywodzący się spod szyldu OneSerwis miał zapewnione profesjonalne wsparcie w każdej sferze prowadzenia serwisu."
       photo={slidePhoto1}
@@ -76,13 +75,17 @@ const HomeTemplate = () => (
     />
     <JoinUsBlock
       slide3
-      header="Rzeczoznawca ADAC"
-      content="Partnerzy One Serwis otrzymują rzeczoznawcę certyfikowanego przez ADAC i ARC."
+      header="Rzeczoznawca ADAC Polska"
+      content="Partnerzy One Serwis otrzymują rzeczoznawcę certyfikowanego przez ADAC Polska i ARC."
       photo={slidePhoto3}
     />
-    <Colaboration home img={homeColab} />
     <Footer />
   </>
 );
 
 export default HomeTemplate;
+
+const Spacer = styled.div`
+  width: 100%;
+  height: 5px;
+`;

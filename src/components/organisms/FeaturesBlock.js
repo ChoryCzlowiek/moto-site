@@ -37,6 +37,7 @@ export default function FeaturesBlock(props) {
         letter-spacing: 3px;
         font-size: 2.5rem;
         color: rgb(226,65,21);
+        margin-bottom: 1rem;
     `;
 
     const ContentAbout = styled.p`
