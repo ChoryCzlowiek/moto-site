@@ -9,10 +9,10 @@ const Root = () => (
     <MainTemplate>
       <Router />
     </MainTemplate>
-    <MessengerCustomerChat
+    {/* <MessengerCustomerChat
       pageId={process.env.FACEBOOK_PAGE_ID}
       appId={process.env.FACEBOOK_APP_ID}
-    />
+    /> */}
   </HashRouter>
 );
 

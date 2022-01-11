@@ -40,7 +40,7 @@ const StyledClipImg = styled.div`
       ? "polygon(0 37%, 50% 0, 100% 37%, 100% 100%, 0% 100%)"
       : "polygon(0% 0%, 100% 0, 100% 63%, 50% 100%, 0 63%)"};
   margin-top: 2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 `;
 
 const SpacerPhoto = styled.div`
@@ -62,7 +62,6 @@ const BenefitsWrapper = () => {
           about="Dołączenie do OneSerwis wiąże się z nieodłączną, profesjonalną pomocą w prowadzeniu warsztaty z naszej strony. Chcemy, aby każdy warsztat będący w OneSerwis miał zapewnione profesjonalne wsparcie w każdej sferze prowadzenia działalności. Dzięki&nbsp;swojej wiarygodności i szerokiej ofercie ma możliwość współpracować z największymi markami z rynku motoryzacyjnego na świecie. 
           "
         />
-        <SpacerPhoto />
         <FeaturesBlock
           position="left"
           image={featuresPhoto2}
@@ -72,7 +71,6 @@ const BenefitsWrapper = () => {
           Usługa rzeczoznawcy z kolei pozwala na  konsultacje w procesie likwidacji szkód, bezpłatne konsultacje i pomoc u dedykowanego młodszego rzeczoznawcy przypisanego do danego warsztatu
           "
         />
-        <SpacerPhoto />
         <FeaturesBlock
           position="right"
           image={featuresPhoto3}
@@ -81,7 +79,6 @@ const BenefitsWrapper = () => {
           about="Dołączenie do OneSerwis wiąże się z nieodłączną, profesjonalną pomocą w prowadzeniu warsztaty z naszej strony. Chcemy, aby każdy warsztat będący w OneSerwis miał zapewnione profesjonalne wsparcie w każdej sferze prowadzenia działalności. Dzięki&nbsp;swojej wiarygodności i szerokiej ofercie ma możliwość współpracować z największymi markami z rynku motoryzacyjnego na świecie. 
           "
         />
-        <SpacerPhoto />
         <FeaturesBlock
           position="left"
           image={featuresPhoto4}
