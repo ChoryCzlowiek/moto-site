@@ -66,7 +66,7 @@ const StyledTextWrapper = styled.div`
     home &&
     css`
       justify-content: center;
-      top: 40%;
+      top: 30%;
       left: 5vw;
       width: 50vw;
       @media (max-width: 768px) {
@@ -123,10 +123,10 @@ const Colaboration = ({ home, img }) => {
         <SectionWithTitle title="Nasza współpraca">
           <StyledWrapper img={img}>
             <StyledTextWrapper>
-              <StyledTitle orange>Partner ADAC</StyledTitle>
+              <StyledTitle orange>Partner ADAC Polska</StyledTitle>
               <Paragraph white>
-                Możemy pochwalić się współpracą z ADAC – globalną marką na rynku
-                motoryzacyjnym, którą zna każdy fan motoryzacji. ADAC to
+                Możemy pochwalić się współpracą z ADAC Polska – globalną marką na rynku
+                motoryzacyjnym, którą zna każdy fan motoryzacji. ADAC Polska to
                 niemiecki klub samochodowy z ponad 17 milionami członków, w tym
                 ponad 1,5 miliona motocyklistów. To sprawia, że jest to
                 największe stowarzyszenie motocyklowe i drugi co do wielkości

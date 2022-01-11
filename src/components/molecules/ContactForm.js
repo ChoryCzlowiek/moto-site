@@ -70,7 +70,26 @@ const FormGroup = styled('div')`
   }
 `;
 
+const FormResult = styled.div`
+  background-color: gray;
+  color: white;
+  width: 75%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  &:hover {
+    background-color: white;
+    color: gray;
+    transition: 0.5s;
+  }
+`;
+
 export default function ContactForm() {
+  const [formStatus, setFormStatus] = useState(0);
   const [toSend, setToSend] = useState({
     v_company: '',
     v_name_surname: '',
@@ -81,18 +100,29 @@ export default function ContactForm() {
   });
   const onSubmit = (e) => {
     e.preventDefault();
-    send(
-      'service_cte0f2g',
-      'template_5iszxum',
-      toSend,
-      'user_0OKiWcMbL60qk13kLAzdz'
-    )
-      .then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
-      })
-      .catch((err) => {
-        console.log('FAILED...', err);
-      });
+    if (
+      toSend.v_company.length > 0 &&
+      toSend.v_name_surname.length > 0 &&
+      toSend.v_email.length > 0 &&
+      toSend.v_phone.length > 0
+    ) {
+      send(
+        'service_cte0f2g',
+        'template_5iszxum',
+        toSend,
+        'user_0OKiWcMbL60qk13kLAzdz'
+      )
+        .then((response) => {
+          console.log('SUCCESS!', response.status, response.text);
+          setFormStatus(200);
+        })
+        .catch((err) => {
+          console.log('FAILED...', err);
+          setFormStatus(404);
+        });
+    } else {
+      setFormStatus(404);
+    }
   };
   const handleChange = (e) => {
     setToSend({ ...toSend, [e.target.name]: e.target.value });
@@ -111,7 +141,7 @@ export default function ContactForm() {
       <Input name="v_phone" value={toSend.v_phone} onChange={handleChange} placeholder="Numer Telefonu" required />
       <StyledInput name="v_message" value={toSend.v_message} onChange={handleChange} as="textarea" placeholder="Napisz wiadomość" required />
       <FormGroup>
-        <Input name="v_rodo" value={toSend.v_rodo} onChange={handleChange} type="checkbox" id="rodo" required />
+        <Input name="v_rodo" value={toSend.v_rodo} onChange={handleChange} type="checkbox" id="rodo" />
         <StyledLabel for="rodo">
           Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z ustawą o ochronie danych
           osobowych w celu (np. wysyłania infomacji handlowej). Podanie danych osobowych jest dobrowolne.
@@ -120,6 +150,12 @@ export default function ContactForm() {
         </StyledLabel>
       </FormGroup>
       <StyledButton onClick={onSubmit}>Wyślij</StyledButton>
+      <FormResult
+        style={{ backgroundColor: ((formStatus === 200 && 'green') || (formStatus === 404 && 'red') ), display: formStatus === 0 && 'none' }}
+      >
+        {formStatus === 200 && 'Wiadomość została wysłana!'}
+        {formStatus === 404 && 'Sprawdź, czy pola formularza są uzupełnione poprawnie.'}
+      </FormResult>
     </StyledForm>
   );
 }

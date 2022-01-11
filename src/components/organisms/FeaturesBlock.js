@@ -36,7 +36,7 @@ export default function FeaturesBlock(props) {
         font-family: "Lato";
         letter-spacing: 3px;
         font-size: 2.5rem;
-        color: rgb(226,65,21);
+        color: rgb(19,24,44);
         margin-bottom: 1rem;
     `;
 

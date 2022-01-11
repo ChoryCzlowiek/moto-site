@@ -7,7 +7,7 @@ import advertisement from "../../assets/images/www.jpg";
 import { pages } from "../../const/pages";
 
 const OfferWrapper = () => (
-  <SectionWithTitle title="OneSerwis współpracuje z ADAC, a co dokładnie otrzymuje warsztat przy dołączeniu do OneSerwis?">
+  <SectionWithTitle title="OneSerwis współpracuje z ADAC Polska, a co dokładnie otrzymuje warsztat przy dołączeniu do OneSerwis?">
     {pages.ofertaDetale.subsites.map((subsite) => {
       let image;
 

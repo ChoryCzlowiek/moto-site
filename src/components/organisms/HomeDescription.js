@@ -55,7 +55,7 @@ const HomeDescription = () => {
       <StyledTitle small orange>
         OneSerwis dzięki swojej wiarygodności i szerokiej ofercie ma możliwość
         współpracować z największymi markami z rynku motoryzacyjnego na świecie
-        jak ADAC.
+        jak ADAC Polska.
       </StyledTitle>
       <StyledTitle small orange>
         Sieć warsztatów OneSerwis oferuje swoim użytkownikom niepowtarzalne
