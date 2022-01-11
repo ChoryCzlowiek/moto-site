@@ -38,6 +38,12 @@ const ContactData = ({ footer }) => {
           <StyledParagraph white big>
             NIP 739 396 1064
           </StyledParagraph>
+          <StyledParagraph white big>
+            +48 606 195 089
+          </StyledParagraph>
+          <StyledParagraph white big>
+            +48 606 654 763
+          </StyledParagraph>
         </StyledTextWrapper>,
       ]
     : [
@@ -53,6 +59,12 @@ const ContactData = ({ footer }) => {
           </StyledParagraph>
           <StyledParagraph white big>
             NIP 739 396 1064
+          </StyledParagraph>
+          <StyledParagraph white big>
+            +48 606 195 089
+          </StyledParagraph>
+          <StyledParagraph white big>
+            +48 606 654 763
           </StyledParagraph>
         </StyledTextWrapper>,
       ];
