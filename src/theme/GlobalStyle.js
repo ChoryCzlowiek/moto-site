@@ -48,8 +48,8 @@ body{
   display: inline-block;
   cursor: pointer;
   position: fixed;
-  right: 20px;
-  top: 10px;
+  right: 10px;
+  top: 24px;
   z-index: 9999;
   background: rgb(19, 24, 44);
   padding: 10px;
@@ -114,7 +114,9 @@ body{
     display: none;
   }
 }
-
+.popup-overlay {
+  background-color: rgb(19,24,44) !important;
+}
 `;
 
 export default GlobalStyle;

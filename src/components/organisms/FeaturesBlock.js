@@ -15,6 +15,18 @@ export default function FeaturesBlock(props) {
         }
     `;
 
+    const FeaturesBlockWrapperLeft = styled(FeaturesBlockWrapper)`
+        @media (max-width: 768px) {
+            flex-flow: column-reverse nowrap;
+        }
+    `;
+
+    const FeaturesBlockWrapperRight = styled(FeaturesBlockWrapper)`
+        @media (max-width: 768px) {
+            flex-flow: column nowrap;
+        }
+    `;
+
     const PhotoBlock = styled.img`
         width: calc(100% / 2);
         aspect-ratio: 16 / 9;
@@ -30,6 +42,9 @@ export default function FeaturesBlock(props) {
         flex-flow: column nowrap;
         gap: 15px;
         justify-content: center;
+        @media (max-width: 768px) {
+            width: 100%;
+        }
     `;
 
     const ContentHeader = styled.h2`
@@ -38,6 +53,9 @@ export default function FeaturesBlock(props) {
         font-size: 2.5rem;
         color: rgb(19,24,44);
         margin-bottom: 1rem;
+        @media (max-width: 768px) {
+            text-align: center;
+        }
     `;
 
     const ContentAbout = styled.p`
@@ -45,6 +63,9 @@ export default function FeaturesBlock(props) {
         color: rgb(19,24,44);
         font-size: 1rem;
         line-height: 1.7rem;
+        @media (max-width: 768px) {
+            text-align: center;
+        }
     `;
 
     const ContentButton = styled.a`
@@ -99,6 +120,11 @@ export default function FeaturesBlock(props) {
         width: calc(50% - 15px);
         @media (max-width: 768px) {
             width: 100%;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            text-align: center;
+            line-height: 1.5rem;
         }
     `;
 
@@ -121,26 +147,26 @@ export default function FeaturesBlock(props) {
         <>
             {props.position.includes("left") &&
                 (
-                    <FeaturesBlockWrapper>
+                    <FeaturesBlockWrapperLeft>
                         <PhotoBlock src={props.image} alt={props.title} />
                         <ContentBlock>
                             <ContentHeader>{props.header}</ContentHeader>
                             <ContentAbout>{props.about}</ContentAbout>
                             {/* <ContentButton href={props.link}>{props.button}</ContentButton> */}
                         </ContentBlock>
-                    </FeaturesBlockWrapper>
+                    </FeaturesBlockWrapperLeft>
                 )
             }
             {props.position.includes("right") &&
                 (
-                    <FeaturesBlockWrapper>
+                    <FeaturesBlockWrapperRight>
                         <ContentBlock>
                             <ContentHeader>{props.header}</ContentHeader>
                             <ContentAbout>{props.about}</ContentAbout>
                             {/* <ContentButton href={props.link}>{props.button}</ContentButton> */}
                         </ContentBlock>
                         <PhotoBlock src={props.image} alt={props.title} />
-                    </FeaturesBlockWrapper>
+                    </FeaturesBlockWrapperRight>
                 )
             }
             {props.position.includes("center") && 

@@ -30,6 +30,9 @@ const WhiteApla = styled.div`
     padding: 15px 30px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
     margin-left: 15px;
+    @media (max-width: 768px) {
+        margin-left: 0px;
+    }
 `;
 
 const Brands = styled.div`

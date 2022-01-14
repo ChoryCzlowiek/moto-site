@@ -16,6 +16,9 @@ const StyledParagraph = styled(Paragraph)`
   margin: 0.35rem 0;
   font-family: "Lato";
   font-weight: 500;
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 `;
 
 const StyledParagraphMargin = styled(Paragraph)`

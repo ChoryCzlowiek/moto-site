@@ -32,7 +32,7 @@ const Navbar = ({ home }) => {
   };
 
   const contentStyle = {
-    background: "rgba(255,255,255,0)",
+    background: "rgb(19,24,44)",
     width: "80%",
     border: "none"
   };
@@ -67,7 +67,7 @@ const Navbar = ({ home }) => {
           <Nav />
           <Popup
             modal
-            overlayStyle={{ background: "rgba(255,255,255,0.98" }}
+            overlayStyle={{ background: "rgb(19,24,44)" }}
             contentStyle={contentStyle}
             closeOnDocumentClick={false}
             trigger={open => <BurgerIcon open={open} />}

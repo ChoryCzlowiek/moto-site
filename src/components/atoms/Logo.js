@@ -8,6 +8,9 @@ const StyledLogo = styled.img`
   cursor: pointer;
   object-fit: contain;
   position: relative;
+  @media (max-width: 768px) {
+    max-width: 14rem;
+  }
 `;
 
 const Logo = ({ onClick, white }) => <>{white ? <StyledLogo onClick={onClick} src={whitelogo} /> : <StyledLogo onClick={onClick} src={logo} />}</>;
